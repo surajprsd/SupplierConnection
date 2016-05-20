@@ -19,5 +19,9 @@
 	<classpathentry exported="true" kind="lib" path="Jars/selenium-server-2.45.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="Jars/selenium-server-standalone-2.46.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="Jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/SupplierConnection_Framework/lib/jacob.jar"/>
+	<classpathentry kind="lib" path="/SupplierConnection_Framework/lib/AutoItX4Java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Desktop/Selenium project/jar/pdfbox-1.8.11.jar" sourcepath="C:/Users/IBM_ADMIN/.m2/repository/org/apache/pdfbox/pdfbox/1.8.11/pdfbox-1.8.11-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Desktop/Selenium project/jar/poi-3.6-20091214.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
