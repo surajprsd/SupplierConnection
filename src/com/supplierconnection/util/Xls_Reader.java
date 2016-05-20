@@ -1,13 +1,18 @@
 package com.supplierconnection.util;
 
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
@@ -266,7 +271,7 @@ public class Xls_Reader {
 		
 		if(colNum==-1)
 			return false;
-		sheet.autoSizeColumn(colNum); //ashish
+		sheet.autoSizeColumn(colNum); 
 		row = sheet.getRow(rowNum-1);
 		if (row == null)
 			row = sheet.createRow(rowNum-1);
@@ -498,5 +503,94 @@ public class Xls_Reader {
 				}
 	}
 	
+	
+	public void xlRead(String sPath,String sheetName) throws Exception{
+		File myxl = new File(sPath);
+		FileInputStream myStream = new FileInputStream(myxl);
+		
+		HSSFWorkbook myWB = new HSSFWorkbook(myStream);
+		//HSSFSheet mySheet = new HSSFSheet(myWB);
+		//HSSFSheet mySheet = myWB.getSheetAt(0);	// Referring to 1st sheet
+		HSSFSheet mySheet = myWB.getSheet(sheetName);	// Referring to 3rd sheet
+		int xRows = mySheet.getLastRowNum()+1;
+		int xCols = mySheet.getRow(0).getLastCellNum();
+		/*myprint("Rows are " + xRows);
+		myprint("Cols are " + xCols);*/
+		String[][] xData = new String[xRows][xCols];
+        for (int i = 0; i < xRows; i++) {
+	           HSSFRow row = mySheet.getRow(i);
+	            for (int j = 0; j < xCols; j++) {
+	               HSSFCell cell = row.getCell(j); // To read value from each col in each row
+	               String value = cellToString(cell);
+	               xData[i][j] = value;
+	               System.out.print(value);
+	               System.out.print("@@");
+	               }
+	            System.out.println("");
+	            
+	        }	
+		
+	}
+	
+	public static String cellToString(HSSFCell cell) {
+	// This function will convert an object of type excel cell to a string value
+        int type = cell.getCellType();
+        Object result;
+        switch (type) {
+            case HSSFCell.CELL_TYPE_NUMERIC: //0
+                result = cell.getNumericCellValue();
+                break;
+            case HSSFCell.CELL_TYPE_STRING: //1
+                result = cell.getStringCellValue();
+                break;
+            case HSSFCell.CELL_TYPE_FORMULA: //2
+                throw new RuntimeException("We can't evaluate formulas in Java");
+            case HSSFCell.CELL_TYPE_BLANK: //3
+                result = "-";
+                break;
+            case HSSFCell.CELL_TYPE_BOOLEAN: //4
+                result = cell.getBooleanCellValue();
+                break;
+            case HSSFCell.CELL_TYPE_ERROR: //5
+                throw new RuntimeException ("This cell has an error");
+            default:
+                throw new RuntimeException("We don't support this cell type: " + type);
+        }
+        return result.toString();
+    }
+	
+public static  int  getcurrentRowNumofTCID(String testCase, String sheetname, Xls_Reader xls) {
+		
+		
+		System.out.println("*************");
+		// find the test in xls
+		// find number of cols in test
+		// number of rows in test
+		// return starting testcase row number
+		//String filename= "C:\\selenium_proj\\SupplierConnection_Framework\\src\\com\\supplierconnection\\xls\\TestSuite1.xlsx";
+	//	Xls_Reader reader = new Xls_Reader(filename);
+		int testCaseStartRowNum=0;
+		for(int rNum=0;rNum<=xls.getRowCount(sheetname);rNum++){
+			if(testCase.equals(xls.getCellData(sheetname, 0, rNum))){
+				 testCaseStartRowNum = rNum;
+				break;
+			}
+			
+		}
+		System.out.println("testCaseStartRowNum"+ testCaseStartRowNum);
+		return testCaseStartRowNum;
+		
+	}
+
+		
+public static void setExcelFile(String Path,String SheetName) throws Exception {
+	try{
+    FileInputStream ExcelFile = new FileInputStream(Path);
+    XSSFWorkbook ExcelWBook = new XSSFWorkbook(ExcelFile);
+    XSSFSheet ExcelWSheet = ExcelWBook.getSheet(SheetName);
+	}catch(Exception e){
+		throw (e);
+	}
+   }
 	
 }
