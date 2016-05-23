@@ -258,6 +258,8 @@ public class keywords {
 					result= elementnotpresent(object);
 				else if (keyword.equals("Verifycontentpresent"))
 					result=Verifycontentpresent(object,(table.get(data)));
+				else if (keyword.equals("step1initprocess"))
+					result=step1initprocess();
 				
 				 
 					
@@ -2511,6 +2513,473 @@ log("Uploading JPG file tupe ");
 	 }
 	return "Pass";
  }
+
+//Select dropdown by value 
+
+public String selectdropdownByvalue(String xpathtext,String inputText)  {
+log("select text"+inputText+"in"+xpathtext);
+		try {
+			Select dropdown = new Select(driver.findElement(By.xpath(xpathtext)));
+			dropdown.selectByValue(inputText);
+			log("selected value "+inputText+"in"+xpathtext);
+					} 
+		catch (Exception e) { 
+
+                      return "Fail -unable to select -"+xpathtext;
+                      
+
+	}
+return "Pass";
+}
+
+public String Supplierprofilelogoupload()
+   {
+        log("upload supplier company logo in step1 ");
+
+	try
+	{
+		//Thread.sleep(2000);
+		//Runtime.getRuntime().exec("C:\\raghunandhan\\AutomationSelenium\\HybridKeywordDriven\\AutoIT\\Suppliercompanylogo.exe");
+		Runtime.getRuntime().exec(System.getProperty("user.dir")+"//src//AutoIT//Suppliercompanylogo.exe");
+		
+		Thread.sleep(3000);
+		
+			
+		
+	}
+	catch(Exception e)
+	{
+	 return "Fail to upload step1 supplier company logo";
+	}
+	return "Pass";
+}
+
+public String Supplierbrochureupload(){
+log("upload supplier company Brochure file in step1 ");
+
+
+	try
+	{
+		
+		
+		Runtime.getRuntime().exec(System.getProperty("user.dir")+"//src//AutoIT//Supplierbrochureupload.exe");
+		Thread.sleep(3000);
+			
+		
+	}
+	catch(Exception e)
+	{
+	 return "Fail to upload Brochure file in step1";
+	}
+	return "Pass";
+}
+
+public String  CleartextByxpath(String xpathtext){
+	log(" Clear text from mentioned field "+ xpathtext);
+	try {
+		
+			
+			driver.findElement(By.xpath(OR.getProperty(xpathtext))).clear();
+			
+		} 
+
+	 catch (Exception e) 
+	{
+		 return "Fail -unable to Clearfrom fields text  -"+ xpathtext;
+		 
+	}
+	return "Pass";	
+	}
+
+public String removeoptionstep1()
+{
+	log("Removing Step1 REMOVE options ");
+	
+	String step1_removeinloop1=null;
+	String step1_removeinloop2=null;
+	String step1_removeinloop3=null;
+	String step1_removeinloop4=null;
+	String step1_removeinloop5=null;
+	String step1_removeinloop6=null;
+	String step1_removeinloop7=null;
+	String step1_removeinloop8=null;
+	
+	try{
+		
+		for (int z=1;z<9;z++)
+		{
+			
+		if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop1))).isDisplayed()) 
+		{
+			
+				driver.findElement(By.xpath(OR.getProperty(step1_removeinloop1))).click();
+				
+		}
+		else if(driver.findElement(By.xpath(OR.getProperty(step1_removeinloop2))).isDisplayed())
+		{ 
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop2))).click();
+		}
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop3))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop3))).click();
+		}
+		
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop4))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop4))).click();
+		}
+         
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop5))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop5))).click();
+		}
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop6))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop6))).click();
+		}
+		
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop7))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop7))).click();
+		}
+		else if (driver.findElement(By.xpath(OR.getProperty(step1_removeinloop8))).isDisplayed())
+		{
+			driver.findElement(By.xpath(OR.getProperty(step1_removeinloop8))).click();
+		}
+		
+		}
+		log("Removed Step1 REMOVE options ");
+		return "Pass";
+		
+	}
+	
+	catch(Exception e){
+		return "Fail -unable to REMOVE options in step1-";
+	}
+}
+
+public String clickbylinktext(String linktext)
+{
+	
+	log("Click on element based on linktext "+ linktext);
+	try{
+	driver.findElement(By.linkText(OR.getProperty(linktext))).click();
+	}
+	catch(Exception e)
+	{
+		return "Fail -Unable to click on -"+linktext;
+	}
+	return "Pass";
+}
+
+public String memberprocurementlist(){
+log("Checking for expected procurement list in member profile page");
+
+
+	try
+	{
+		int count = 0;
+	    String[] exp = {"Facilities Support","Food and Beverage Manufacturing","Industrial Manufacturing","Lab Supplies and Equipment","Logistics","Professional, Marketing and Technical Services","Service Parts","Technology","Others"};
+	    WebElement dropdown = driver.findElement(By.id("procurements"));
+	    Select select = new Select(dropdown);
+
+	    List<WebElement> options = select.getOptions();
+	    
+	    for (WebElement we : options) 
+	    {
+	        for (int i = 0; i < exp.length; i++)
+	        {
+	            if (we.getText().equals(exp[i])) 
+	            
+	            {
+	                count++;
+	            }
+	        }
+	    }
+	    if (count == exp.length)
+	    {
+	    	log("Procurement list is matched ");
+	    } 
+	    else 
+	    {
+	    log("Differnece in member profile procurement list");
+	    	return "Fail -Differnece in member profile procurement list -";
+	    }
+			
+		
+	}
+
+	
+	catch(Exception e)
+	{
+	 return "Fail Procurement list in member profile page has difference ";
+	}
+	return "Pass";
+}
+
+public String PMSocialsharing()
+
+{
+	String MP_socialsharing1=null;
+	String MP_socialsharing2=null;
+	String MP_socialsharing3=null;
+	String MP_socialsharing4=null;
+	String MP_socialsharing5=null;
+	
+	log("Opening Member profile social sharing options in Member profile page");
+		try{
+
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing1))).click();
+	           driver.findElement(By.xpath(OR.getProperty(MP_socialsharing2))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing3))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing4))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing5))).click();
+
+                 String parentWindow = driver.getWindowHandle();
+	
+	        Set<String> handles =  driver.getWindowHandles();
+	
+	      for(String windowHandle  : handles)
+	        {
+	            if(!windowHandle.equals(parentWindow))
+	                 {
+	                       driver.switchTo().window(windowHandle);
+	          
+	        	             driver.close(); 
+	         
+	         driver.switchTo().window(parentWindow); //cntrl to parent window
+	         log("Social sharing options in Member profile page opened ");
+	          }
+	       }
+	
+
+
+                    }
+
+              catch(Exception e)
+
+                    {
+			return "Fail -Not able to Open social sharing options in Member profile page-";
+
+		    }
+		   return "Pass";
+
+
+}
+
+public String RegisterpageSocialsharing()
+
+{
+	String RP_socialsharing1=null;
+	String RP_socialsharing2=null;
+	String RP_socialsharing3=null;
+	String RP_socialsharing4=null;
+	String RP_socialsharing5=null;
+	
+	log("Opening social sharing options in Register page");
+		try{
+
+               driver.findElement(By.xpath(OR.getProperty(RP_socialsharing1))).click();
+	           driver.findElement(By.xpath(OR.getProperty(RP_socialsharing2))).click();
+               driver.findElement(By.xpath(OR.getProperty(RP_socialsharing3))).click();
+               driver.findElement(By.xpath(OR.getProperty(RP_socialsharing4))).click();
+               driver.findElement(By.xpath(OR.getProperty(RP_socialsharing5))).click();
+
+                 String parentWindow = driver.getWindowHandle();
+	
+	        Set<String> handles =  driver.getWindowHandles();
+	
+	      for(String windowHandle  : handles)
+	        {
+	            if(!windowHandle.equals(parentWindow))
+	                 {
+	                       driver.switchTo().window(windowHandle);
+	          
+	        	             driver.close(); 
+	         
+	         driver.switchTo().window(parentWindow); //cntrl to parent window
+	         
+	          }
+	       }
+	
+	      log("Opened social sharing options in Register page");
+
+                    }
+
+              catch(Exception e)
+
+                    {
+			return "Fail -Not able to Open social sharing options in Register page-";
+
+		    }
+		   return "Pass";
+
+
+}
+
+
+public String iselementenabled(String xpathlink){
+	
+	log("Check for element enable"+xpathlink);
+	try{
+		if (!driver.findElement(By.xpath(OR.getProperty(xpathlink))).isEnabled())
+		{
+			//System.out.println("Element " +xpathlink + " Is Disabled" );
+			log("Element "+xpathlink + xpathlink + " Is Disabled");
+		}
+		else
+		{
+			log("Element " +xpathlink + " Is Enabled");
+			return "Fail";
+		}
+	}catch(Exception e){
+		return "Fail - Element is enabled -"+xpathlink;
+	}
+	return "Pass";
+}
+
+public String iselementpresent(String xpathlink){
+	
+	log("Check for element enable"+xpathlink);
+	try{
+		if (driver.findElement(By.xpath(OR.getProperty(xpathlink))).isDisplayed())
+		{
+			log("Element " +xpathlink + " Is Presnet" );
+			
+		}
+		else
+		{
+			log("Element " +xpathlink + " Is not Presnet");
+			return "Fail";
+		}
+	}catch(Exception e){
+		return "Fail - Element is not Presnet  -"+xpathlink;
+	}
+	return "Pass";
+}
+
+public String elementselected(String xpathlink){
+	
+	log("Check for element enable"+xpathlink);
+	try{
+		if (driver.findElement(By.xpath(OR.getProperty(xpathlink))).isSelected())
+		{
+			log("Element " +xpathlink + " Is Selected " );
+			
+		}
+		else
+		{
+			log("Element " +xpathlink + " is not Selected");
+			return "Fail";
+		}
+	}catch(Exception e){
+		return "Fail - Element is not Selected  -"+xpathlink;
+	}
+	return "Pass";
+}
+
+
+public String elementnotpresent(String xpathlink)
+
+{
+	
+	log("Check for element present " + xpathlink);
+	
+	try
+	{
+
+		if(driver.findElement(By.xpath(OR.getProperty(xpathlink))).isDisplayed())
+			
+		{
+			
+			log("Element present " + xpathlink);
+			return "Fail";
+			
+		}
+		else
+		{
+			throw new NoSuchElementException(" Element is not presnet");
+			
+		}
+		
+		
+	}
+	
+	catch(Exception e)
+	{
+		
+		log("Element is not present " + xpathlink);
+		return "Pass";
+	}
+	
+}
+
+public String Verifycontentpresent(String xpath, String textmatch)
+{
+log("Checking for the Content present  " + textmatch+ "in object " + xpath);
+
+
+	try
+	{
+		String Pagetext=driver.findElement(By.xpath(OR.getProperty(xpath))).getText().trim();
+		if (Pagetext.contains(textmatch.trim()))
+				{
+			
+			log("Checking for the content present  " + textmatch+ "in object " + xpath);
+		}
+		else
+		{
+			//System.out.println("Text is not present" + xpath);
+			//log("Checking for the text is not presnet  " + textmatch+ "in object " + xpath);
+			//return "Fail";
+			return "Fail -unable to verify content -"+xpath;
+		}
+	}
+	catch(Exception e)
+	{
+		//System.out.println("Text is not present" + xpath);
+	// return "Fail";
+	 return "Fail -unable to verify content -"+xpath;
+	}
+	return "Pass";
+}
+
+public String selectmultidropdownoptions(){
+	
+	String MP_multtidropdown=null;
+	log(" Select multiple values from select element ");
+	try{
+		for (int i=1;i<5;i++)
+		{
+						
+			driver.findElement(By.xpath(OR.getProperty(MP_multtidropdown))).click();
+			//driver.findElement(By.xpath("//*[@id='subcategory']/option["+i+"]")).click();
+			log(" Multiple values from select element is selected ");
+							
+		}
+	}catch(Exception e){
+		return "Fail - Element is not Presnet  -";
+	}
+	return "Pass";
+}
+
+public String step1initprocess()
+{
+	log("unchecking options on step1 ");
+	try{
+		
+		driver.findElement(By.xpath(OR.getProperty("step1_init1"))).click();
+		driver.findElement(By.xpath(OR.getProperty("step1_init2"))).click();
+        driver.findElement(By.xpath(OR.getProperty("step1_init3"))).click();
+        //driver.findElement(By.xpath(OR.getProperty("step1_init4"))).click();
+        //driver.findElement(By.xpath(OR.getProperty("step1_init5"))).click();
+        log("Uncheked options on step1 ");
+		return "Pass";
+		
+	}catch(Exception e){
+		return "Fail -unable to uncheck in step1-";
+	}
+}
 
 }
 
