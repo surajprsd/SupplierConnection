@@ -142,6 +142,7 @@ public class keywords {
 					result=changeEmailVerify();
 				else if(keyword.equals("selectDropdownVisibleText"))
 					result= selectDropdownVisibleText(object,table.get(data));
+				
 				else if(keyword.equals("uploadFile"))
 					result=uploadFile(table.get(data), object);
 				else if(keyword.equals("Steps_validatemsg"))
@@ -226,7 +227,37 @@ public class keywords {
 					result=step3helpfile();
 				else if(keyword.equals("emailtheseSuppliers"))
 					result=emailtheseSuppliers(table.get(data));
-
+					
+				else if (keyword.equals("SelectdropdownByvalue"))
+					result=SelectdropdownByvalue(object,(table.get(data)));
+				else if(keyword.equals("Supplierprofilelogoupload"))
+					result=Supplierprofilelogoupload();
+				else if(keyword.equals("Supplierbrochureupload"))
+					result=Supplierbrochureupload();
+				else if (keyword.equals("CleartextByxpath"))
+					result=CleartextByxpath(object);
+				else if (keyword.equals("removeoptionstep1"))
+					result=removeoptionstep1();
+				else if(keyword.equals("clickbylinktext"))
+					result= clickbylinktext(object);
+				else if(keyword.equals("memberprocurementlist"))
+					result=memberprocurementlist();
+				else if(keyword.equals("PMSocialsharing"))
+					result=PMSocialsharing();
+				else if(keyword.equals("RegisterpageSocialsharing"))
+					result=RegisterpageSocialsharing();
+				else if(keyword.equals("iselementenabled"))
+					result= iselementenabled(object);
+				else if(keyword.equals("iselementpresent"))
+					result= iselementpresent(object);
+				else if(keyword.equals("selectmultidropdownoptions"))
+					result= selectmultidropdownoptions();
+				else if(keyword.equals("elementselected"))
+					result= elementselected(object);
+				else if(keyword.equals("elementnotpresent"))
+					result= elementnotpresent(object);
+				else if (keyword.equals("Verifycontentpresent"))
+					result=Verifycontentpresent(object,(table.get(data)));
 				
 				 
 					
