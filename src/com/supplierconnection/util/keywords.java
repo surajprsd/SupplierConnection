@@ -2720,20 +2720,20 @@ log("Checking for expected procurement list in member profile page");
 public String PMSocialsharing()
 
 {
-	String MP_socialsharing1=null;
+	/*String MP_socialsharing1=null;
 	String MP_socialsharing2=null;
 	String MP_socialsharing3=null;
 	String MP_socialsharing4=null;
-	String MP_socialsharing5=null;
+	String MP_socialsharing5=null;*/
 	
 	log("Opening Member profile social sharing options in Member profile page");
 		try{
 
-               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing1))).click();
-	           driver.findElement(By.xpath(OR.getProperty(MP_socialsharing2))).click();
-               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing3))).click();
-               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing4))).click();
-               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing5))).click();
+               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[1]/a")).click();
+	           driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[2]/a")).click();
+               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[4]/a")).click();
+               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[5]/a")).click();
+               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[3]/a")).click();
 
                  String parentWindow = driver.getWindowHandle();
 	
