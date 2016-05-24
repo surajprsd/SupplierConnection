@@ -2595,14 +2595,14 @@ public String removeoptionstep1()
 {
 	log("Removing Step1 REMOVE options ");
 	
-	String step1_removeinloop1=null;
-	String step1_removeinloop2=null;
-	String step1_removeinloop3=null;
-	String step1_removeinloop4=null;
-	String step1_removeinloop5=null;
-	String step1_removeinloop6=null;
-	String step1_removeinloop7=null;
-	String step1_removeinloop8=null;
+	String step1_removeinloop1="step1_removeinloop1";
+	String step1_removeinloop2="step1_removeinloop2";
+	String step1_removeinloop3="step1_removeinloop3";
+	String step1_removeinloop4="step1_removeinloop4";
+	String step1_removeinloop5="step1_removeinloop5";
+	String step1_removeinloop6="step1_removeinloop6";
+	String step1_removeinloop7="step1_removeinloop7";
+	String step1_removeinloop8="step1_removeinloop8";
 	
 	try{
 		
@@ -2720,20 +2720,20 @@ log("Checking for expected procurement list in member profile page");
 public String PMSocialsharing()
 
 {
-	/*String MP_socialsharing1=null;
-	String MP_socialsharing2=null;
-	String MP_socialsharing3=null;
-	String MP_socialsharing4=null;
-	String MP_socialsharing5=null;*/
+	String MP_socialsharing1="MP_socialsharing1";
+	String MP_socialsharing2="MP_socialsharing2";
+	String MP_socialsharing3="MP_socialsharing3";
+	String MP_socialsharing4="MP_socialsharing4";
+	String MP_socialsharing5="MP_socialsharing5";
 	
 	log("Opening Member profile social sharing options in Member profile page");
 		try{
 
-               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[1]/a")).click();
-	           driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[2]/a")).click();
-               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[4]/a")).click();
-               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[5]/a")).click();
-               driver.findElement(By.xpath("html/body/div[4]/div/div/div/div[2]/ul/li[3]/a")).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing1))).click();
+	           driver.findElement(By.xpath(OR.getProperty(MP_socialsharing2))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing3))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing4))).click();
+               driver.findElement(By.xpath(OR.getProperty(MP_socialsharing5))).click();
 
                  String parentWindow = driver.getWindowHandle();
 	
@@ -2946,14 +2946,14 @@ log("Checking for the Content present  " + textmatch+ "in object " + xpath);
 
 public String selectmultidropdownoptions(){
 	
-       //	String MP_multtidropdown=null;
+       	String MP_multtidropdown="MP_multtidropdown";
 	log(" Select multiple values from select element ");
 	try{
 		for (int i=1;i<5;i++)
 		{
 						
-			//driver.findElement(By.xpath(OR.getProperty(MP_multtidropdown))).click();
-			driver.findElement(By.xpath("//*[@id='subcategory']/option["+i+"]")).click();
+			driver.findElement(By.xpath(OR.getProperty(MP_multtidropdown))).click();
+			//driver.findElement(By.xpath("//*[@id='subcategory']/option["+i+"]")).click();
 			log(" Multiple values from select element is selected ");
 							
 		}
