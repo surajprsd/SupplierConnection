@@ -2770,11 +2770,11 @@ public String PMSocialsharing()
 public String RegisterpageSocialsharing()
 
 {
-	String RP_socialsharing1=null;
-	String RP_socialsharing2=null;
-	String RP_socialsharing3=null;
-	String RP_socialsharing4=null;
-	String RP_socialsharing5=null;
+	String RP_socialsharing1="RP_socialsharing1";
+	String RP_socialsharing2="RP_socialsharing2";
+	String RP_socialsharing3="RP_socialsharing3";
+	String RP_socialsharing4="RP_socialsharing4";
+	String RP_socialsharing5="RP_socialsharing5";
 	
 	log("Opening social sharing options in Register page");
 		try{
