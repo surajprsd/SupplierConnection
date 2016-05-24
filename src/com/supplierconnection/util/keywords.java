@@ -729,6 +729,18 @@ public String click_css(String csslink){
 				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("roleregisteredpwd"));
 				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
 			}
+			else if(userRole.equals("Buyeradmin2")){
+				driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("buyeradminid2"));
+				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("buyeradminpwd2"));
+				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
+			}
+			
+			else if(userRole.equals("Supplieradmin2")){
+				driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("supplieradminid2"));
+				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("supplieradminpwd2"));
+				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
+			}
+			
 			}catch(Exception e){
 				log("Exception in verifyrole"+ e);
 				return "Fail- not logged in";
