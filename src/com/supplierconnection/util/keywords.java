@@ -27,6 +27,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.jetty.http.SSORealm;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -229,7 +230,7 @@ public class keywords {
 					result=emailtheseSuppliers(table.get(data));
 					
 				else if (keyword.equals("SelectdropdownByvalue"))
-					result=SelectdropdownByvalue(object,(table.get(data)));
+					result=selectdropdownByvalue(object,(table.get(data)));
 				else if(keyword.equals("Supplierprofilelogoupload"))
 					result=Supplierprofilelogoupload();
 				else if(keyword.equals("Supplierbrochureupload"))
@@ -2879,7 +2880,7 @@ public String elementselected(String xpathlink){
 }
 
 
-public String elementnotpresent(String xpathlink)
+public String elementnotpresent(String xpathlink) 
 
 {
 	

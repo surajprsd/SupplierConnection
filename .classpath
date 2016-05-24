@@ -6,22 +6,24 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="Jars/cucumber-java-1.1.3.jar"/>
-	<classpathentry kind="lib" path="Jars/cucumber-sandwich.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/log4j-1.2.17.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-examples-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-excelant-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-ooxml-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-ooxml-schemas-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/poi-scratchpad-3.12-20150511.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/selenium-java-2.46.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/selenium-server-2.45.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/selenium-server-standalone-2.46.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="Jars/xmlbeans-2.3.0.jar"/>
-	<classpathentry kind="lib" path="/SupplierConnection_Framework/lib/jacob.jar"/>
-	<classpathentry kind="lib" path="/SupplierConnection_Framework/lib/AutoItX4Java.jar"/>
-	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Desktop/Selenium project/jar/pdfbox-1.8.11.jar" sourcepath="C:/Users/IBM_ADMIN/.m2/repository/org/apache/pdfbox/pdfbox/1.8.11/pdfbox-1.8.11-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Desktop/Selenium project/jar/poi-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/lib/AutoItX4Java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/lib/jacob.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/cucumber-java-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/cucumber-sandwich.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/flash-selenium.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/fontbox-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/pdfbox-1.8.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-examples-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-excelant-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-ooxml-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-ooxml-schemas-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/poi-scratchpad-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/selenium-java-2.46.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/selenium-server-2.45.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/selenium-server-standalone-2.46.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/SupplierConnectionLocal/WebContent/WEB-INF/lib/poi-3.2-FINAL.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
