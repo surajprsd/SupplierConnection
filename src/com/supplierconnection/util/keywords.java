@@ -2946,14 +2946,14 @@ log("Checking for the Content present  " + textmatch+ "in object " + xpath);
 
 public String selectmultidropdownoptions(){
 	
-	String MP_multtidropdown=null;
+       //	String MP_multtidropdown=null;
 	log(" Select multiple values from select element ");
 	try{
 		for (int i=1;i<5;i++)
 		{
 						
-			driver.findElement(By.xpath(OR.getProperty(MP_multtidropdown))).click();
-			//driver.findElement(By.xpath("//*[@id='subcategory']/option["+i+"]")).click();
+			//driver.findElement(By.xpath(OR.getProperty(MP_multtidropdown))).click();
+			driver.findElement(By.xpath("//*[@id='subcategory']/option["+i+"]")).click();
 			log(" Multiple values from select element is selected ");
 							
 		}
