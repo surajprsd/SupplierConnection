@@ -13,6 +13,116 @@
 <classes>
         <class name="com.supplierconnection.testcases.ChangePassword"></class>  
     </classes>
+</test>
 
+<test name="ChangeEmail">
+<classes>
+        <class name="com.supplierconnection.testcases.ChangeEmail"></class>  
+    </classes>
+</test>
+
+<test name="SC_step3">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step3"></class>  
+    </classes>
+</test>
+
+<test name="SC_step4">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step4"></class>  
+    </classes>
+</test>
+
+<test name="SmallBizProfile">
+<classes>
+        <class name="com.supplierconnection.testcases.SmallBizProfile"></class>  
+    </classes>
+</test>
+
+<test name="SC_Businessprofiles">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_Businessprofiles"></class>  
+    </classes>
+</test>
+
+<test name="SC_step9">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step9"></class>  
+    </classes>
+</test>
+
+<test name="SC_step8">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step8"></class>  
+    </classes>
+</test>
+
+<test name="SC_step1">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step1"></class>  
+    </classes>
+</test>
+
+<test name="Registeration">
+<classes>
+        <class name="com.supplierconnection.testcases.Registeration"></class>  
+    </classes>
+</test>
+
+<test name="Registerasother">
+<classes>
+        <class name="com.supplierconnection.testcases.Registerasother"></class>  
+    </classes>
+</test>
+
+<test name="RegisterBuyer">
+<classes>
+        <class name="com.supplierconnection.testcases.RegisterBuyer"></class>  
+    </classes>
+</test>
+
+<test name="SC_RegisterpageValidations">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_RegisterpageValidations"></class>  
+    </classes>
+</test>
+
+<test name="SC_step4">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step4"></class>  
+    </classes>
+</test>
+
+<test name="SC_step4validation">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step4validation"></class>  
+    </classes>
+</test>
+
+<test name="SC_step7">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_step7"></class>  
+    </classes>
+</test>
+
+<test name="SC_profilemanagers">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_profilemanagers"></class>  
+    </classes>
+</test>
+<test name="SC_profilemanagers_Supplieremployee">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_profilemanagers_Supplieremployee"></class>  
+    </classes>
+</test>
+<test name="SC_profilemanagers_addmoreadmins">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_profilemanagers_addmoreadmins"></class>  
+    </classes>
+</test>
+<test name="SC_profilemanagers_Employeeportal">
+<classes>
+        <class name="com.supplierconnection.testcases.SC_profilemanagers_Employeeportal"></class>  
+    </classes>
 </test>
 </suite>
