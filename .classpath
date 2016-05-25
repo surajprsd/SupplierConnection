@@ -22,6 +22,6 @@
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/selenium-server-2.45.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/selenium-server-standalone-2.46.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/git/SupplierConnection/Jars/xmlbeans-2.3.0.jar"/>
-	<classpathentry kind="lib" path="/SupplierConnectionLocal/WebContent/WEB-INF/lib/poi-3.2-FINAL.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Desktop/Selenium project/jar/poi-3.6-20091214.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
