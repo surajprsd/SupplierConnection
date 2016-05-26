@@ -2534,7 +2534,7 @@ log("select text"+inputText+"in"+xpathtext);
 		try {
 			Select dropdown = new Select(driver.findElement(By.xpath(xpathtext)));
 			dropdown.selectByValue(inputText);
-			log("selected value "+inputText+"in"+xpathtext);
+			log("selected value "+ inputText +"in " +xpathtext);
 					} 
 		catch (Exception e) { 
 
