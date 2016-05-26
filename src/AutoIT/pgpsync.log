@@ -1,0 +1,7 @@
+[09/19/14 18:54:21]PGPwdeSyncBGFS::Repair started
+[09/19/14 18:54:27]PGPwdeSyncBGFS::Repair result, err=-11980
+[09/19/14 22:32:16]PGPwdeSyncBGFS::PGPWDE02 moved, err=-11976
+[09/19/14 22:32:16]PGPwdeSyncBGFS::PGPWDE02 start at sector 155417608
+[09/19/14 22:32:16]PGPwdeSyncBGFS::Repair started
+[09/19/14 22:32:23]PGPwdeSyncBGFS::Repair result, err=0
+[09/19/14 22:32:23]PGPwdeSyncBGFS::Rename file result, err=0

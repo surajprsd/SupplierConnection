@@ -1,0 +1,95 @@
+26/05/2016 12:09:44 devpinoyLogger SC_Register----openBrowser-----------------Browser--- 
+26/05/2016 12:09:44 devpinoyLogger Opening BrowserMozilla
+26/05/2016 12:09:47 devpinoyLogger SC_Register----navigate-----------Environment--------- 
+26/05/2016 12:09:47 devpinoyLogger link value=Environment
+26/05/2016 12:09:47 devpinoyLogger Openined URL:https://supplierconn.mybluemix.net/SupplierConnection/login.action
+26/05/2016 12:09:54 devpinoyLogger SC_Register----click-----------Registerlink--------- 
+26/05/2016 12:09:54 devpinoyLogger Click onRegisterlink
+26/05/2016 12:09:54 devpinoyLogger SC_Register----input-----------firstname------FN--- 
+26/05/2016 12:09:54 devpinoyLogger Enter textRaghuinfirstname
+26/05/2016 12:09:58 devpinoyLogger SC_Register----input-----------lastnmae------LN--- 
+26/05/2016 12:09:58 devpinoyLogger Enter textNandaninlastnmae
+26/05/2016 12:09:58 devpinoyLogger SC_Register----input-----------email------email--- 
+26/05/2016 12:09:58 devpinoyLogger Enter textnragh.u.nandan.1@gmail.cominemail
+26/05/2016 12:09:58 devpinoyLogger SC_Register----input-----------confirmemail------confirmemail--- 
+26/05/2016 12:09:58 devpinoyLogger Enter textnragh.u.nandan.1@gmail.cominconfirmemail
+26/05/2016 12:09:58 devpinoyLogger SC_Register----input-----------password------password--- 
+26/05/2016 12:09:58 devpinoyLogger Enter textpassw0rdinpassword
+26/05/2016 12:09:58 devpinoyLogger SC_Register----input-----------confirmpassword------confirmpassword--- 
+26/05/2016 12:09:58 devpinoyLogger Enter textpassw0rdinconfirmpassword
+26/05/2016 12:09:58 devpinoyLogger SC_Register----selectDropdownVisibleText-----------selectcountry------selectcountry--- 
+26/05/2016 12:09:58 devpinoyLogger Selecting dropdown visible text:selectcountry
+26/05/2016 12:10:02 devpinoyLogger SC_Register----input-----------zipcode------zipcode--- 
+26/05/2016 12:10:02 devpinoyLogger Enter text234567inzipcode
+26/05/2016 12:10:03 devpinoyLogger SC_Register----selectDropdownVisibleText-----------selectreason------selectreason--- 
+26/05/2016 12:10:03 devpinoyLogger Selecting dropdown visible text:selectreason
+26/05/2016 12:10:06 devpinoyLogger SC_Register----input-----------companyname------companyname--- 
+26/05/2016 12:10:06 devpinoyLogger Enter textTest123incompanyname
+26/05/2016 12:10:07 devpinoyLogger SC_Register----selectDropdownVisibleText-----------hearaboutSC------hearaboutSC--- 
+26/05/2016 12:10:07 devpinoyLogger Selecting dropdown visible text:hearaboutSC
+26/05/2016 12:10:10 devpinoyLogger SC_Register----input-----------supplierinfo------supplierinfo--- 
+26/05/2016 12:10:10 devpinoyLogger Enter textTest Seleniuminsupplierinfo
+26/05/2016 12:10:11 devpinoyLogger SC_Register----input-----------linkedin------linkedin--- 
+26/05/2016 12:10:11 devpinoyLogger Enter texthttp://www.linkedin.com/company/YourLinkedinProfileNameHereinlinkedin
+26/05/2016 12:10:11 devpinoyLogger SC_Register----input-----------twitter------twitter--- 
+26/05/2016 12:10:11 devpinoyLogger Enter textYourTwitterProfileNameHereintwitter
+26/05/2016 12:10:11 devpinoyLogger SC_Register----click-----------personalphotoinfo--------- 
+26/05/2016 12:10:11 devpinoyLogger Click onpersonalphotoinfo
+26/05/2016 12:10:11 devpinoyLogger SC_Register----Verifytextpresent-----------photohelpoverlay------overlaytext--- 
+26/05/2016 12:10:11 devpinoyLogger Checking for the text present  Upload a Photoin object photohelpoverlay
+26/05/2016 12:10:14 devpinoyLogger Checking for the text present  Upload a Photoin object photohelpoverlay
+26/05/2016 12:10:14 devpinoyLogger SC_Register----click-----------photooverlayclose--------- 
+26/05/2016 12:10:14 devpinoyLogger Click onphotooverlayclose
+26/05/2016 12:10:14 devpinoyLogger SC_Register----click-----------uploadphoto--------- 
+26/05/2016 12:10:14 devpinoyLogger Click onuploadphoto
+26/05/2016 12:10:15 devpinoyLogger SC_Register----uploadmemberlogo-------------------- 
+26/05/2016 12:10:15 devpinoyLogger Uploading JPG file tupe 
+26/05/2016 12:10:24 devpinoyLogger SC_Register----click-----------removeuploadbutton--------- 
+26/05/2016 12:10:24 devpinoyLogger Click onremoveuploadbutton
+26/05/2016 12:10:33 devpinoyLogger SC_Register----click-----------removefromoverlay--------- 
+26/05/2016 12:10:33 devpinoyLogger Click onremovefromoverlay
+26/05/2016 12:10:35 devpinoyLogger SC_Register----click-----------uploadphoto--------- 
+26/05/2016 12:10:35 devpinoyLogger Click onuploadphoto
+26/05/2016 12:10:36 devpinoyLogger SC_Register----uploadmemberlogo-------------------- 
+26/05/2016 12:10:36 devpinoyLogger Uploading JPG file tupe 
+26/05/2016 12:10:45 devpinoyLogger SC_Register----click-----------checkbox--------- 
+26/05/2016 12:10:45 devpinoyLogger Click oncheckbox
+26/05/2016 12:10:53 devpinoyLogger SC_Register----click-----------Termsandcondition--------- 
+26/05/2016 12:10:53 devpinoyLogger Click onTermsandcondition
+26/05/2016 12:10:54 devpinoyLogger SC_Register----Verifytextpresent-----------Termsandconditionoverlay------Termsandconditionoverlay--- 
+26/05/2016 12:10:54 devpinoyLogger Checking for the text present  Supplier Connection Terms of usein object Termsandconditionoverlay
+26/05/2016 12:10:56 devpinoyLogger Checking for the text present  Supplier Connection Terms of usein object Termsandconditionoverlay
+26/05/2016 12:10:56 devpinoyLogger SC_Register----click-----------Termsandconditionoverlayclose--------- 
+26/05/2016 12:10:56 devpinoyLogger Click onTermsandconditionoverlayclose
+26/05/2016 12:10:56 devpinoyLogger SC_Register----Verifytextpresent-----------requiredtext------requiredtext--- 
+26/05/2016 12:10:56 devpinoyLogger Checking for the text present  Requiredin object requiredtext
+26/05/2016 12:10:58 devpinoyLogger Checking for the text present  Requiredin object requiredtext
+26/05/2016 12:10:58 devpinoyLogger SC_Register----RegisterpageSocialsharing-------------------- 
+26/05/2016 12:10:58 devpinoyLogger Opening social sharing options in Register page
+26/05/2016 12:11:09 devpinoyLogger Opened social sharing options in Register page
+26/05/2016 12:11:09 devpinoyLogger SC_Register----click-----------registerbutton--------- 
+26/05/2016 12:11:09 devpinoyLogger Click onregisterbutton
+26/05/2016 12:11:20 devpinoyLogger SC_Register----Verifytextpresent-----------alreadyregistered------alreadyregistered--- 
+26/05/2016 12:11:20 devpinoyLogger Checking for the text present  Email address already registered. in object alreadyregistered
+26/05/2016 12:11:22 devpinoyLogger Checking for the text present  Email address already registered. in object alreadyregistered
+26/05/2016 12:11:22 devpinoyLogger SC_Register----Verifytextpresent-----------alreadyregistered2------alreadyregistered2--- 
+26/05/2016 12:11:22 devpinoyLogger Checking for the text present   Email address already registered. PleaseSign inin object alreadyregistered2
+26/05/2016 12:11:24 devpinoyLogger Checking for the text present   Email address already registered. PleaseSign inin object alreadyregistered2
+26/05/2016 12:11:24 devpinoyLogger SC_Register----input-----------email------email1--- 
+26/05/2016 12:11:24 devpinoyLogger Enter textpr.a.t.hik.tes.t.123@gmail.cominemail
+26/05/2016 12:11:24 devpinoyLogger SC_Register----input-----------confirmemail------confirmemail1--- 
+26/05/2016 12:11:24 devpinoyLogger Enter textpr.a.t.hik.tes.t.123@gmail.cominconfirmemail
+26/05/2016 12:11:24 devpinoyLogger SC_Register----click-----------checkbox--------- 
+26/05/2016 12:11:24 devpinoyLogger Click oncheckbox
+26/05/2016 12:11:24 devpinoyLogger SC_Register----click-----------registerbutton--------- 
+26/05/2016 12:11:24 devpinoyLogger Click onregisterbutton
+26/05/2016 12:11:29 devpinoyLogger SC_Register----Verifytextpresent-----------sucessregister------sucessregister--- 
+26/05/2016 12:11:29 devpinoyLogger Checking for the text present  Verify Your Email Addressin object sucessregister
+26/05/2016 12:11:31 devpinoyLogger Checking for the text present  Verify Your Email Addressin object sucessregister
+26/05/2016 12:11:31 devpinoyLogger SC_Register----click-----------requestanotheremail--------- 
+26/05/2016 12:11:31 devpinoyLogger Click onrequestanotheremail
+26/05/2016 12:11:32 devpinoyLogger SC_Register----Verifytextpresent-----------resendverificationemail------resendverificationemail--- 
+26/05/2016 12:11:32 devpinoyLogger Checking for the text present  Resend Verification Emailin object resendverificationemail
+26/05/2016 12:11:35 devpinoyLogger Checking for the text present  Resend Verification Emailin object resendverificationemail
+26/05/2016 12:11:35 devpinoyLogger SC_Register----click-----------resendverificationemailclose--------- 
+26/05/2016 12:11:35 devpinoyLogger Click onresendverificationemailclose
