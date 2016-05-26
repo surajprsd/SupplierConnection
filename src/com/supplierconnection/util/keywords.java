@@ -965,7 +965,7 @@ public String selectresultsPerpage_summarycards() {
 				//Getting Results per page
 			    String resultsperpage=pageresults[i];
 			    log("Checking pagination for option--------"+pageresults[i]);
-			  //  WebElement resultsByPage = driver.findElement(By.xpath("//select[@id='results_select']"));
+			  
 			    driver.findElement(By.xpath("//select[@id='results_select']")).click();
 			    WebElement resultsByPage= driver.findElement(By.xpath("//select[@id='results_select']"));
 			    Select results1 = new Select(resultsByPage);
@@ -984,7 +984,7 @@ public String selectresultsPerpage_summarycards() {
 public String selectresultsPerpage_textview() {
 	try{
 		log("Executing selectresultsPerpage_textview");
-		String Resultsperpage  = driver.findElement(By.xpath("//div[@id='ContentArea']/div[2]")).getText();
+		String Resultsperpage  = driver.findElement(By.xpath("//div[@class='col showingMetaDiv']")).getText().trim();
 		String result = Resultsperpage.substring(Resultsperpage.indexOf("f") + 1, Resultsperpage.indexOf("r"));
 		 int x= Integer.parseInt(result.trim()) ;
 		 
@@ -995,13 +995,12 @@ public String selectresultsPerpage_textview() {
 				//Getting Results per page
 			    String resultsperpage=pageresults[i];
 			    log("Checking pagination for option--------"+pageresults[i]);
-			  //  WebElement resultsByPage = driver.findElement(By.xpath("//select[@id='results_select']"));
-			    driver.findElement(By.xpath("//select[@id='results_select']")).click();
+			  
 			    WebElement resultsByPage= driver.findElement(By.xpath("//select[@id='results_select']"));
 			    Select results1 = new Select(resultsByPage);
 			    results1.selectByVisibleText(resultsperpage);
 			    Thread.sleep(2000);
-			    Verifytextpresent("//div[@id='LeftSideBar']/div[1]/h2", "Narrow Suppliers by:");
+			    Verifytextpresent("Leftsidenav_narrow_xapth", "Narrow Suppliers by:");
 				}
 		}
 	}catch(Exception e){
@@ -1018,26 +1017,35 @@ public String displayResultsPerPage_textview(){
 		log("Executing displayResultsPerPage");
 	//Getting the suppleir records per page
 		List<WebElement> results = driver.findElements(By.xpath("//div[@class='sup-container']"));
-		
+		String Resultsperpage  = driver.findElement(By.xpath("//div[@class='col showingMetaDiv']")).getText().trim();
+		String numberofrecords = Resultsperpage.substring(Resultsperpage.indexOf('-')+1);
+		String[] sub= numberofrecords.split(" ");
+		System.out.println(sub[0]);
+		String y= sub[0];
+		int x= Integer.parseInt(y) ;
+							
+	
     int max= results.size();
-	
-	for(int i=1;i<=max;i++){
-	
-	String xpa1="//div[@id='v_results']/div[";
-	String xpa2="]/div[1]/div[1]/div/h2/span";
-	//Printing all supplier profile names per page
-		WebElement main =driver.findElement(By.xpath("//div[@id='v_results']/div"));  
-		String temp = null;
-		if(main.findElement(By.xpath(xpa1+i+xpa2)).isDisplayed()){
-			temp = main.findElement(By.xpath(xpa1+i+xpa2)).getText();
-				System.out.println(temp);
-				log("Supplier name: " + temp);
-				
-		}
-		else{
-			log("Element not present as not in textview "+ main.findElement(By.xpath(xpa1+i+xpa2)));
-		}
-	}
+    if(x==max){
+				for(int i=1;i<=max;i++){
+						;
+						String xpa1="//*[@id='v_results']/div[";
+						String xpa2="]/div[1]/div[1]/div/h2/span";
+						
+						//Printing all supplier profile names per page
+						WebElement main =driver.findElement(By.xpath("//div[@id='v_results']/div"));  
+						String temp = null;
+						if(isElementpresent(xpa1+i+xpa2)){
+							temp = main.findElement(By.xpath(xpa1+i+xpa2)).getText().trim();
+							System.out.println(temp);
+							log("Supplier name: " + temp);
+						
+				}
+				else{
+					log("Element not present as not in textview "+ main.findElement(By.xpath((xpa1+i+xpa2))));
+				}
+			}
+    }
 	}catch(Exception e){
 		log("Unable to check displayResultsPerPage" + e);
 		return " Fail- Unable to check displayResultsPerPage";
@@ -1467,7 +1475,7 @@ public String smallBizRecordcontentVerify(String profileName){
 public String sortBy() {
 	try{
 		log("Executing sortby");
-		String Resultsperpage  = driver.findElement(By.xpath("//*[@id='ContentArea']/div[1]/div[3]")).getText();
+		String Resultsperpage  = driver.findElement(By.xpath("//div[@class='col showingMetaDiv']")).getText();
 		String result = Resultsperpage.substring(Resultsperpage.indexOf("f") + 1, Resultsperpage.indexOf("r"));
 		 int x= Integer.parseInt(result.trim()) ;
 		 if(x>1){
@@ -2305,7 +2313,8 @@ log("Uploading JPG file tupe ");
 		 isDisabled_textbox("step8_employment_year");
 		 isSelected("step8_agreement_xpath");
 			 
-		driver.findElement(By.xpath("//*[@id='contractorssave']/div[12]/fieldset/div[3]/div[2]/a")).click();
+		driver.findElement(By.xpath(OR.getProperty("step8_commercialoffice_help"))).click();
+		Thread.sleep(2000);
 		Verifytextpresent("step8_helpbubble_xpath1", OR.getProperty("step8_commercialoffice_help_content"));
 		driver.findElement(By.xpath("//*[@id='help_info']/div/div/div[1]/a")).click();
 			 
@@ -2534,7 +2543,7 @@ log("select text"+inputText+"in"+xpathtext);
 		try {
 			Select dropdown = new Select(driver.findElement(By.xpath(xpathtext)));
 			dropdown.selectByValue(inputText);
-			log("selected value "+ inputText +"in " +xpathtext);
+			log("selected value "+inputText+"in"+xpathtext);
 					} 
 		catch (Exception e) { 
 
