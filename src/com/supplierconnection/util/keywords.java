@@ -175,13 +175,13 @@ public class keywords {
 				else if(keyword.equals("facetSelection"))
 					result=facetSelection();
 				else if(keyword.equals("endecaRuntime"))
-					result=endecaRuntime();
+					result=endecaRuntime(table.get(data));
 				else if(keyword.equals("smallBizRecordcontentVerify"))
 					result=smallBizRecordcontentVerify(table.get(data));
 				else if(keyword.equals("typeAheadsearch"))
 					result=typeAheadsearch(table.get(data),table.get(data));
 				else if(keyword.equals("sortBy"))
-					result=sortBy();
+					result=sortBy(table.get(data));
 				else if(keyword.equals("keywordSearchByClick"))
 					result=keywordSearchByClick(table.get(data));
 				else if(keyword.equals("pdfReading"))
@@ -1392,13 +1392,14 @@ public String facetSelection(){
 	return "Pass";	
 		
 }
-public String endecaRuntime(){
+public String endecaRuntime(String maxdaysdiff){
 				try{
 					log("Executing endecaRuntime");
 					//String Resultsperpage  = driver.findElement(By.xpath("//*[@id='ContentArea']/div[1]/div[3]")).getText();
 					//String result = Resultsperpage.substring(Resultsperpage.indexOf("f") + 1, Resultsperpage.indexOf("r"));
 					String Resultsperpage = driver.findElement(By.xpath("//*[@id='paginationDiv']/div[3]/span")).getText();
 					 int x= Integer.parseInt(Resultsperpage.trim()) ;
+					 int xlsdiff = Integer.parseInt(maxdaysdiff.trim());
 					 if(x>1){
 					selectDropdownVisibleText("sortby_xpath", "Newest Suppliers");
 					 }
@@ -1423,13 +1424,13 @@ public String endecaRuntime(){
 				    }
 				    else{
 				    
-						    if(diffInDays<15){
+						    if(diffInDays<xlsdiff){
 						    	log("Endeca working");
 						    	return "Pass";
 						    }
 						    else{
-						    	log("Endeca failing due to difference in days");
-						    	return "Fail-- Endeca fail due to number of mismatch in days";
+						    	log("Endeca failing due to difference in days. Last run was on "+ date1);
+						    	return "Fail-- Endeca fail due to number of mismatch in days.";
 						    }
 				    }
 				}catch(Exception e){
@@ -1472,25 +1473,25 @@ public String smallBizRecordcontentVerify(String profileName){
 	return "Pass";
 	}
 
-public String sortBy() {
+public String sortBy(String dropdownoption) {
 	try{
 		log("Executing sortby");
 		String Resultsperpage  = driver.findElement(By.xpath("//div[@class='col showingMetaDiv']")).getText();
 		String result = Resultsperpage.substring(Resultsperpage.indexOf("f") + 1, Resultsperpage.indexOf("r"));
 		 int x= Integer.parseInt(result.trim()) ;
 		 if(x>1){
-					String[] sortbynames = {"Relevance", "Newest Suppliers", "Supplier Name(A-Z)","Supplier Name(Z-A)"};
-					int size= sortbynames.length;
-					for(int i=0;i<size;i++){
+					//String[] sortbynames = {"Relevance", "Newest Suppliers", "Supplier Name(A-Z)","Supplier Name(Z-A)"};
+					//int size= sortbynames.length;
+					//for(int i=0;i<size;i++){
 					//Sort by 
-					String sortbyname =	sortbynames[i];
+					String sortbyname =	dropdownoption.trim();
 					log("Sorting by----"+sortbyname);
 					WebElement sortbyele=driver.findElement(By.xpath("//select[@id='sortBy_select']"));
 					Select sortby = new Select (sortbyele);
 				           sortby.selectByVisibleText(sortbyname);
 				           Thread.sleep(2000);
-				           Verifytextpresent("//div[@id='LeftSideBar']/div[1]/h2", "Narrow Suppliers by:");
-					}
+				           Verifytextpresent("Leftsidenav_narrow_xapth", "Narrow Suppliers by:");
+					//}
 		 }
 	}catch(Exception e){
 		log("Unable to do sort: "+e);
