@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.supplierconnection.testcases.Registerasother">
+      <class name="com.supplierconnection.testcases.SC_profilemanagers">
         <methods>
-          <include name="register" invocation-numbers="0"/>
+          <include name="SC_profilemanagers" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.supplierconnection.testcases.Registerasother -->
+      </class> <!-- com.supplierconnection.testcases.SC_profilemanagers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,194 +1,140 @@
-30/05/2016 15:31:46 devpinoyLogger SC_RegisterpageValidations----openBrowser-----------------Browser--- 
-30/05/2016 15:31:46 devpinoyLogger Opening BrowserMozilla
-30/05/2016 15:31:52 devpinoyLogger SC_RegisterpageValidations----navigate-----------Environment--------- 
-30/05/2016 15:31:52 devpinoyLogger link value=Environment
-30/05/2016 15:31:52 devpinoyLogger Openined URL:https://supplierconn.mybluemix.net/SupplierConnection/login.action
-30/05/2016 15:32:03 devpinoyLogger SC_RegisterpageValidations----click-----------Registerlink--------- 
-30/05/2016 15:32:03 devpinoyLogger Click onRegisterlink
-30/05/2016 15:32:03 devpinoyLogger SC_RegisterpageValidations----input-----------linkedin------linkedin--- 
-30/05/2016 15:32:03 devpinoyLogger Enter textaweinlinkedin
-30/05/2016 15:32:06 devpinoyLogger SC_RegisterpageValidations----input-----------twitter------twitter--- 
-30/05/2016 15:32:06 devpinoyLogger Enter text!@intwitter
-30/05/2016 15:32:07 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:32:07 devpinoyLogger Click onregisterbutton
-30/05/2016 15:32:10 devpinoyLogger SC_RegisterpageValidations----waitfor-------------------- 
-30/05/2016 15:32:10 devpinoyLogger Calling implicit wait
-30/05/2016 15:32:10 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation1------validation1--- 
-30/05/2016 15:32:10 devpinoyLogger Checking for the text present  Please enter information for First Name in object validation1
-30/05/2016 15:32:12 devpinoyLogger Checking for the text present  Please enter information for First Name in object validation1
-30/05/2016 15:32:12 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation2------validation2--- 
-30/05/2016 15:32:12 devpinoyLogger Checking for the text present  Please enter information for Last Name in object validation2
-30/05/2016 15:32:14 devpinoyLogger Checking for the text present  Please enter information for Last Name in object validation2
-30/05/2016 15:32:14 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation3------validation3--- 
-30/05/2016 15:32:14 devpinoyLogger Checking for the text present  Please enter information for Email Address in object validation3
-30/05/2016 15:32:16 devpinoyLogger Checking for the text present  Please enter information for Email Address in object validation3
-30/05/2016 15:32:16 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation4------validation4--- 
-30/05/2016 15:32:16 devpinoyLogger Checking for the text present  Please enter information for Email Address (Confirm) in object validation4
-30/05/2016 15:32:18 devpinoyLogger Checking for the text present  Please enter information for Email Address (Confirm) in object validation4
-30/05/2016 15:32:18 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation5------validation5--- 
-30/05/2016 15:32:18 devpinoyLogger Checking for the text present  Please enter information for Password in object validation5
-30/05/2016 15:32:20 devpinoyLogger Checking for the text present  Please enter information for Password in object validation5
-30/05/2016 15:32:20 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation6------validation6--- 
-30/05/2016 15:32:20 devpinoyLogger Checking for the text present  Please enter information for Password (Confirm) in object validation6
-30/05/2016 15:32:22 devpinoyLogger Checking for the text present  Please enter information for Password (Confirm) in object validation6
-30/05/2016 15:32:22 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation7------validation7--- 
-30/05/2016 15:32:22 devpinoyLogger Checking for the text present  Please enter information for Country in object validation7
-30/05/2016 15:32:24 devpinoyLogger Checking for the text present  Please enter information for Country in object validation7
-30/05/2016 15:32:24 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation8------validation8--- 
-30/05/2016 15:32:24 devpinoyLogger Checking for the text present  Please enter information for ZIP Code in object validation8
-30/05/2016 15:32:26 devpinoyLogger Checking for the text present  Please enter information for ZIP Code in object validation8
-30/05/2016 15:32:26 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation9------validation9--- 
-30/05/2016 15:32:26 devpinoyLogger Checking for the text present  Please enter information for LinkedIn Profile in object validation9
-30/05/2016 15:32:28 devpinoyLogger Checking for the text present  Please enter information for LinkedIn Profile in object validation9
-30/05/2016 15:32:28 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation10------validation10--- 
-30/05/2016 15:32:28 devpinoyLogger Checking for the text present  Please enter information for Twitter Handle in object validation10
-30/05/2016 15:32:30 devpinoyLogger Checking for the text present  Please enter information for Twitter Handle in object validation10
-30/05/2016 15:32:30 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation11------validation11--- 
-30/05/2016 15:32:30 devpinoyLogger Checking for the text present  Please enter information for Tell us how you heard about Supplier Connection in object validation11
-30/05/2016 15:32:33 devpinoyLogger Checking for the text present  Please enter information for Tell us how you heard about Supplier Connection in object validation11
-30/05/2016 15:32:33 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation12------validation12--- 
-30/05/2016 15:32:33 devpinoyLogger Checking for the text present  Please read and agree to the Terms and Conditions in object validation12
-30/05/2016 15:32:35 devpinoyLogger Checking for the text present  Please read and agree to the Terms and Conditions in object validation12
-30/05/2016 15:32:35 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation13------validation13--- 
-30/05/2016 15:32:35 devpinoyLogger Checking for the text present  Please enter information for What is your reason for registering with Supplier Connection? in object validation13
-30/05/2016 15:32:37 devpinoyLogger Checking for the text present  Please enter information for What is your reason for registering with Supplier Connection? in object validation13
-30/05/2016 15:32:37 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation14------validation14--- 
-30/05/2016 15:32:37 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation14
-30/05/2016 15:32:39 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation14
-30/05/2016 15:32:39 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation15------validation14--- 
-30/05/2016 15:32:39 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation15
-30/05/2016 15:32:41 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation15
-30/05/2016 15:32:41 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation16------validation14--- 
-30/05/2016 15:32:41 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation16
-30/05/2016 15:32:43 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation16
-30/05/2016 15:32:43 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation17------validation14--- 
-30/05/2016 15:32:43 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation17
-30/05/2016 15:32:45 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation17
-30/05/2016 15:32:45 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation18------validation14--- 
-30/05/2016 15:32:45 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation18
-30/05/2016 15:32:47 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation18
-30/05/2016 15:32:47 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation19------validation14--- 
-30/05/2016 15:32:47 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation19
-30/05/2016 15:32:49 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation19
-30/05/2016 15:32:49 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation20------validation14--- 
-30/05/2016 15:32:49 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation20
-30/05/2016 15:32:51 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation20
-30/05/2016 15:32:51 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation21------validation14--- 
-30/05/2016 15:32:51 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation21
-30/05/2016 15:32:53 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation21
-30/05/2016 15:32:53 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation22------validation14--- 
-30/05/2016 15:32:53 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation22
-30/05/2016 15:32:55 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation22
-30/05/2016 15:32:55 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation23------validation14--- 
-30/05/2016 15:32:55 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation23
-30/05/2016 15:32:57 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation23
-30/05/2016 15:32:57 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation24------validation24--- 
-30/05/2016 15:32:57 devpinoyLogger Checking for the text present  Please enter a valid LinkedIn Urlin object validation24
-30/05/2016 15:32:59 devpinoyLogger Checking for the text present  Please enter a valid LinkedIn Urlin object validation24
-30/05/2016 15:32:59 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation25------validation25--- 
-30/05/2016 15:32:59 devpinoyLogger Checking for the text present  Please enter a valid twitter handlein object validation25
-30/05/2016 15:33:01 devpinoyLogger Checking for the text present  Please enter a valid twitter handlein object validation25
-30/05/2016 15:33:01 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation26------validation26--- 
-30/05/2016 15:33:01 devpinoyLogger Checking for the text present  Please read and agree to the Terms and Conditionsin object validation26
-30/05/2016 15:33:03 devpinoyLogger Checking for the text present  Please read and agree to the Terms and Conditionsin object validation26
-30/05/2016 15:33:03 devpinoyLogger SC_RegisterpageValidations----selectDropdownVisibleText-----------selectreason------selectreason--- 
-30/05/2016 15:33:03 devpinoyLogger Selecting dropdown visible text:selectreason
-30/05/2016 15:33:06 devpinoyLogger SC_RegisterpageValidations----selectDropdownVisibleText-----------hearaboutSC------hearaboutSC--- 
-30/05/2016 15:33:06 devpinoyLogger Selecting dropdown visible text:hearaboutSC
-30/05/2016 15:33:10 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:33:10 devpinoyLogger Click onregisterbutton
-30/05/2016 15:33:17 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation27------validation14--- 
-30/05/2016 15:33:17 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation27
-30/05/2016 15:33:19 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation27
-30/05/2016 15:33:19 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation28------validation14--- 
-30/05/2016 15:33:19 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation28
-30/05/2016 15:33:21 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation28
-30/05/2016 15:33:21 devpinoyLogger SC_RegisterpageValidations----click-----------uploadphoto--------- 
-30/05/2016 15:33:21 devpinoyLogger Click onuploadphoto
-30/05/2016 15:33:21 devpinoyLogger SC_RegisterpageValidations----Supplierbrochureupload-------------------- 
-30/05/2016 15:33:21 devpinoyLogger upload supplier company Brochure file in step1 
-30/05/2016 15:33:24 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation29------validation29--- 
-30/05/2016 15:33:24 devpinoyLogger Checking for the text present  Your photo does not meet the Supplier Connection guidelines, please edit or try another.in object validation29
-30/05/2016 15:33:27 devpinoyLogger Checking for the text present  Your photo does not meet the Supplier Connection guidelines, please edit or try another.in object validation29
-30/05/2016 15:33:27 devpinoyLogger SC_RegisterpageValidations----input-----------email------email--- 
-30/05/2016 15:33:27 devpinoyLogger Enter textTestinemail
-30/05/2016 15:33:27 devpinoyLogger SC_RegisterpageValidations----input-----------confirmemail------confirmemail--- 
-30/05/2016 15:33:27 devpinoyLogger Enter texttest123inconfirmemail
-30/05/2016 15:33:27 devpinoyLogger SC_RegisterpageValidations----input-----------password------password--- 
-30/05/2016 15:33:27 devpinoyLogger Enter textpasswordinpassword
-30/05/2016 15:33:28 devpinoyLogger SC_RegisterpageValidations----input-----------confirmpassword------confirmpassword--- 
-30/05/2016 15:33:28 devpinoyLogger Enter textpasswinconfirmpassword
-30/05/2016 15:33:28 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:33:28 devpinoyLogger Click onregisterbutton
-30/05/2016 15:33:31 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation30------validation30--- 
-30/05/2016 15:33:31 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation30
-30/05/2016 15:33:33 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation30
-30/05/2016 15:33:33 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation31------validation31--- 
-30/05/2016 15:33:33 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation31
-30/05/2016 15:33:35 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation31
-30/05/2016 15:33:35 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation32------validation32--- 
-30/05/2016 15:33:35 devpinoyLogger Checking for the text present  Password does not contain a minimum of 8 characters and atleast 1 non-alphabetic characterin object validation32
-30/05/2016 15:33:37 devpinoyLogger Checking for the text present  Password does not contain a minimum of 8 characters and atleast 1 non-alphabetic characterin object validation32
-30/05/2016 15:33:37 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation33------validation33--- 
-30/05/2016 15:33:37 devpinoyLogger Checking for the text present  Passwords do not matchin object validation33
-30/05/2016 15:33:39 devpinoyLogger Checking for the text present  Passwords do not matchin object validation33
-30/05/2016 15:33:39 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation3------validation30--- 
-30/05/2016 15:33:39 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation3
-30/05/2016 15:33:41 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation3
-30/05/2016 15:33:41 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation4------validation31--- 
-30/05/2016 15:33:41 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation4
-30/05/2016 15:33:43 devpinoyLogger Checking for the text present  Please enter a valid email address.in object validation4
-30/05/2016 15:33:43 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation5------validation32--- 
-30/05/2016 15:33:43 devpinoyLogger Checking for the text present  Password does not contain a minimum of 8 characters and atleast 1 non-alphabetic characterin object validation5
-30/05/2016 15:33:45 devpinoyLogger Checking for the text present  Password does not contain a minimum of 8 characters and atleast 1 non-alphabetic characterin object validation5
-30/05/2016 15:33:45 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation6------validation33--- 
-30/05/2016 15:33:45 devpinoyLogger Checking for the text present  Passwords do not matchin object validation6
-30/05/2016 15:33:47 devpinoyLogger Checking for the text present  Passwords do not matchin object validation6
-30/05/2016 15:33:47 devpinoyLogger SC_RegisterpageValidations----input-----------email------email1--- 
-30/05/2016 15:33:47 devpinoyLogger Enter texttest@gmail.cominemail
-30/05/2016 15:33:48 devpinoyLogger SC_RegisterpageValidations----input-----------confirmemail------confirmemail2--- 
-30/05/2016 15:33:48 devpinoyLogger Enter texttest123@gmail.cominconfirmemail
-30/05/2016 15:33:48 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:33:48 devpinoyLogger Click onregisterbutton
-30/05/2016 15:33:51 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation31------validation34--- 
-30/05/2016 15:33:51 devpinoyLogger Checking for the text present  Confirm Email Address is not matching with Email Addressin object validation31
-30/05/2016 15:33:53 devpinoyLogger Checking for the text present  Confirm Email Address is not matching with Email Addressin object validation31
-30/05/2016 15:33:53 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation3------validation34--- 
-30/05/2016 15:33:53 devpinoyLogger Checking for the text present  Confirm Email Address is not matching with Email Addressin object validation3
-30/05/2016 15:33:55 devpinoyLogger Checking for the text present  Confirm Email Address is not matching with Email Addressin object validation3
-30/05/2016 15:33:55 devpinoyLogger SC_RegisterpageValidations----SelectdropdownByvalue-----------selectreason------selectreason1--- 
-30/05/2016 15:33:55 devpinoyLogger select text3inselectreason
-30/05/2016 15:33:59 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:33:59 devpinoyLogger Click onregisterbutton
-30/05/2016 15:34:03 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation41------validation14--- 
-30/05/2016 15:34:03 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation41
-30/05/2016 15:34:05 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation41
-30/05/2016 15:34:05 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation12------validation42--- 
-30/05/2016 15:34:05 devpinoyLogger Checking for the text present  Please enter information for Company Name in object validation12
-30/05/2016 15:34:07 devpinoyLogger Checking for the text present  Please enter information for Company Name in object validation12
-30/05/2016 15:34:07 devpinoyLogger SC_RegisterpageValidations----SelectdropdownByvalue-----------selectreason------selectreason2--- 
-30/05/2016 15:34:07 devpinoyLogger select text2inselectreason
-30/05/2016 15:34:10 devpinoyLogger SC_RegisterpageValidations----click-----------registerbutton--------- 
-30/05/2016 15:34:10 devpinoyLogger Click onregisterbutton
-30/05/2016 15:34:15 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation12------validation42--- 
-30/05/2016 15:34:15 devpinoyLogger Checking for the text present  Please enter information for Company Name in object validation12
-30/05/2016 15:34:17 devpinoyLogger Checking for the text present  Please enter information for Company Name in object validation12
-30/05/2016 15:34:17 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation41------validation14--- 
-30/05/2016 15:34:17 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation41
-30/05/2016 15:34:19 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation41
-30/05/2016 15:34:19 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation13------validation43--- 
-30/05/2016 15:34:19 devpinoyLogger Checking for the text present  Please choose Procurement Responsibility in object validation13
-30/05/2016 15:34:21 devpinoyLogger Checking for the text present  Please choose Procurement Responsibility in object validation13
-30/05/2016 15:34:21 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation51------validation14--- 
-30/05/2016 15:34:21 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation51
-30/05/2016 15:34:23 devpinoyLogger Checking for the text present  Required field cannot be left blankin object validation51
-30/05/2016 15:34:23 devpinoyLogger SC_RegisterpageValidations----SelectdropdownByvalue-----------selectcategory------selectcategory--- 
-30/05/2016 15:34:23 devpinoyLogger select textAFACSinselectcategory
-30/05/2016 15:34:26 devpinoyLogger SC_RegisterpageValidations----selectmultidropdownoptions-----------validation52multivalues--------- 
-30/05/2016 15:34:26 devpinoyLogger  Select multiple values from select element 
-30/05/2016 15:34:27 devpinoyLogger  Multiple values from select element is selected 
-30/05/2016 15:34:28 devpinoyLogger  Multiple values from select element is selected 
-30/05/2016 15:34:29 devpinoyLogger  Multiple values from select element is selected 
-30/05/2016 15:34:30 devpinoyLogger  Multiple values from select element is selected 
-30/05/2016 15:34:30 devpinoyLogger SC_RegisterpageValidations----Verifytextpresent-----------validation53------validation53--- 
-30/05/2016 15:34:30 devpinoyLogger Checking for the text present  Allowed to choose only 1 subcategory at a timein object validation53
+30/05/2016 18:26:10 devpinoyLogger SC_profilemanagers----openBrowser-----------------Browser--- 
+30/05/2016 18:26:10 devpinoyLogger Opening BrowserMozilla
+30/05/2016 18:26:13 devpinoyLogger SC_profilemanagers----navigate-----------Environment--------- 
+30/05/2016 18:26:13 devpinoyLogger link value=Environment
+30/05/2016 18:26:13 devpinoyLogger Openined URL:https://supplierconn.mybluemix.net/SupplierConnection/login.action
+30/05/2016 18:26:20 devpinoyLogger SC_profilemanagers----verifyLogin-----------------Role--- 
+30/05/2016 18:26:20 devpinoyLogger Verifying login roleSupplieradmin3
+30/05/2016 18:26:28 devpinoyLogger Verified login roleSupplieradmin3
+30/05/2016 18:26:28 devpinoyLogger SC_profilemanagers----click-----------SC_companyname--------- 
+30/05/2016 18:26:28 devpinoyLogger Click onSC_companyname
+30/05/2016 18:26:33 devpinoyLogger SC_profilemanagers----clickbylinktext-----------sc_profilemanager--------- 
+30/05/2016 18:26:33 devpinoyLogger Click on element based on linktext sc_profilemanager
+30/05/2016 18:26:34 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_profilemanagertext------sc_profilemanagertext--- 
+30/05/2016 18:26:34 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
+30/05/2016 18:26:36 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
+30/05/2016 18:26:36 devpinoyLogger SC_profilemanagers----click-----------sc_addadmin--------- 
+30/05/2016 18:26:36 devpinoyLogger Click onsc_addadmin
+30/05/2016 18:26:36 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:36 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:37 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------SC_supplieradminmax5mssag------SC_supplieradminmax5mssag--- 
+30/05/2016 18:26:37 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
+30/05/2016 18:26:39 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
+30/05/2016 18:26:39 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:39 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:39 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
+30/05/2016 18:26:39 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:26:41 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_invalidaddress--- 
+30/05/2016 18:26:41 devpinoyLogger Enter texttest.cominsc_lookup
+30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:41 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
+30/05/2016 18:26:41 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:26:43 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:26:43 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup3--- 
+30/05/2016 18:26:43 devpinoyLogger Enter textraniranj@in.ibm.cominsc_lookup
+30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:44 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:44 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:44 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:26:44 devpinoyLogger Click onsc_added
+30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeradminalready------sc_buyeradminalready--- 
+30/05/2016 18:26:44 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
+30/05/2016 18:26:46 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
+30/05/2016 18:26:46 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup4--- 
+30/05/2016 18:26:46 devpinoyLogger Enter textbuyertocheckemail@gmail.cominsc_lookup
+30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:47 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:47 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:47 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:26:47 devpinoyLogger Click onsc_added
+30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeralready------sc_buyeralready--- 
+30/05/2016 18:26:47 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
+30/05/2016 18:26:49 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
+30/05/2016 18:26:49 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup5--- 
+30/05/2016 18:26:49 devpinoyLogger Enter textgilesv@us.ibm.cominsc_lookup
+30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:50 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:50 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:50 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:26:50 devpinoyLogger Click onsc_added
+30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_sysadminalready------sc_sysadminalready--- 
+30/05/2016 18:26:50 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
+30/05/2016 18:26:52 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
+30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup6--- 
+30/05/2016 18:26:52 devpinoyLogger Enter textrag.h.unandann6@gmail.cominsc_lookup
+30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:52 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:52 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:53 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:26:53 devpinoyLogger Click onsc_added
+30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieradminalready------sc_supplieradminalready--- 
+30/05/2016 18:26:53 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
+30/05/2016 18:26:55 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
+30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup8--- 
+30/05/2016 18:26:55 devpinoyLogger Enter textvthendoo@in.ibm.cominsc_lookup
+30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:55 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:55 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:55 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:56 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:26:56 devpinoyLogger Click onsc_added
+30/05/2016 18:26:56 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieremployeealready------sc_supplieremployeealready--- 
+30/05/2016 18:26:56 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
+30/05/2016 18:26:58 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
+30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup7--- 
+30/05/2016 18:26:58 devpinoyLogger Enter textteaaaast@in.ibm.cominsc_lookup
+30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:58 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:26:58 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:26:58 devpinoyLogger Calling implicit wait
+30/05/2016 18:26:59 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_notregisteredid------sc_notregisteredid--- 
+30/05/2016 18:26:59 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
+30/05/2016 18:27:01 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
+30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup--- 
+30/05/2016 18:27:01 devpinoyLogger Enter textdushyams@in.ibm.cominsc_lookup
+30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:27:01 devpinoyLogger Calling implicit wait
+30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:27:01 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:27:01 devpinoyLogger Calling implicit wait
+30/05/2016 18:27:02 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:27:02 devpinoyLogger Click onsc_added
+30/05/2016 18:27:02 devpinoyLogger SC_profilemanagers----click-----------sc_adddone--------- 
+30/05/2016 18:27:02 devpinoyLogger Click onsc_adddone
+30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:27:08 devpinoyLogger Calling implicit wait
+30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----click-----------SC_removeadminaccess2--------- 
+30/05/2016 18:27:08 devpinoyLogger Click onSC_removeadminaccess2
+30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_removingaccesswindow------sc_removingaccesswindow--- 
+30/05/2016 18:27:08 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
+30/05/2016 18:27:10 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
+30/05/2016 18:27:10 devpinoyLogger SC_profilemanagers----click-----------SC_removebutton--------- 
+30/05/2016 18:27:10 devpinoyLogger Click onSC_removebutton
+30/05/2016 18:27:10 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_confirmsupplier------sc_confirmsupplier--- 
+30/05/2016 18:27:10 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
+30/05/2016 18:27:12 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
+30/05/2016 18:27:12 devpinoyLogger SC_profilemanagers----click-----------changeemail_overlay_done_xpath--------- 
+30/05/2016 18:27:12 devpinoyLogger Click onchangeemail_overlay_done_xpath
+30/05/2016 18:27:18 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:27:18 devpinoyLogger Calling implicit wait
+30/05/2016 18:27:18 devpinoyLogger SC_profilemanagers----click-----------sc_grandadminforemployee--------- 
+30/05/2016 18:27:18 devpinoyLogger Click onsc_grandadminforemployee
