@@ -1,140 +1,159 @@
-30/05/2016 18:26:10 devpinoyLogger SC_profilemanagers----openBrowser-----------------Browser--- 
-30/05/2016 18:26:10 devpinoyLogger Opening BrowserMozilla
-30/05/2016 18:26:13 devpinoyLogger SC_profilemanagers----navigate-----------Environment--------- 
-30/05/2016 18:26:13 devpinoyLogger link value=Environment
-30/05/2016 18:26:13 devpinoyLogger Openined URL:https://supplierconn.mybluemix.net/SupplierConnection/login.action
-30/05/2016 18:26:20 devpinoyLogger SC_profilemanagers----verifyLogin-----------------Role--- 
-30/05/2016 18:26:20 devpinoyLogger Verifying login roleSupplieradmin3
-30/05/2016 18:26:28 devpinoyLogger Verified login roleSupplieradmin3
-30/05/2016 18:26:28 devpinoyLogger SC_profilemanagers----click-----------SC_companyname--------- 
-30/05/2016 18:26:28 devpinoyLogger Click onSC_companyname
-30/05/2016 18:26:33 devpinoyLogger SC_profilemanagers----clickbylinktext-----------sc_profilemanager--------- 
-30/05/2016 18:26:33 devpinoyLogger Click on element based on linktext sc_profilemanager
-30/05/2016 18:26:34 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_profilemanagertext------sc_profilemanagertext--- 
-30/05/2016 18:26:34 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
-30/05/2016 18:26:36 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
-30/05/2016 18:26:36 devpinoyLogger SC_profilemanagers----click-----------sc_addadmin--------- 
-30/05/2016 18:26:36 devpinoyLogger Click onsc_addadmin
-30/05/2016 18:26:36 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:36 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:37 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------SC_supplieradminmax5mssag------SC_supplieradminmax5mssag--- 
-30/05/2016 18:26:37 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
-30/05/2016 18:26:39 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
-30/05/2016 18:26:39 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:39 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:39 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
-30/05/2016 18:26:39 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
-30/05/2016 18:26:41 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
-30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_invalidaddress--- 
-30/05/2016 18:26:41 devpinoyLogger Enter texttest.cominsc_lookup
-30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:41 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:41 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
-30/05/2016 18:26:41 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
-30/05/2016 18:26:43 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
-30/05/2016 18:26:43 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup3--- 
-30/05/2016 18:26:43 devpinoyLogger Enter textraniranj@in.ibm.cominsc_lookup
-30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:44 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:44 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:44 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:26:44 devpinoyLogger Click onsc_added
-30/05/2016 18:26:44 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeradminalready------sc_buyeradminalready--- 
-30/05/2016 18:26:44 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
-30/05/2016 18:26:46 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
-30/05/2016 18:26:46 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup4--- 
-30/05/2016 18:26:46 devpinoyLogger Enter textbuyertocheckemail@gmail.cominsc_lookup
-30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:47 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:47 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:47 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:26:47 devpinoyLogger Click onsc_added
-30/05/2016 18:26:47 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeralready------sc_buyeralready--- 
-30/05/2016 18:26:47 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
-30/05/2016 18:26:49 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
-30/05/2016 18:26:49 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup5--- 
-30/05/2016 18:26:49 devpinoyLogger Enter textgilesv@us.ibm.cominsc_lookup
-30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:50 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:50 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:50 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:26:50 devpinoyLogger Click onsc_added
-30/05/2016 18:26:50 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_sysadminalready------sc_sysadminalready--- 
-30/05/2016 18:26:50 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
-30/05/2016 18:26:52 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
-30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup6--- 
-30/05/2016 18:26:52 devpinoyLogger Enter textrag.h.unandann6@gmail.cominsc_lookup
-30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:52 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:52 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:52 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:53 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:26:53 devpinoyLogger Click onsc_added
-30/05/2016 18:26:53 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieradminalready------sc_supplieradminalready--- 
-30/05/2016 18:26:53 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
-30/05/2016 18:26:55 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
-30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup8--- 
-30/05/2016 18:26:55 devpinoyLogger Enter textvthendoo@in.ibm.cominsc_lookup
-30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:55 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:55 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:55 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:55 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:56 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:26:56 devpinoyLogger Click onsc_added
-30/05/2016 18:26:56 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieremployeealready------sc_supplieremployeealready--- 
-30/05/2016 18:26:56 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
-30/05/2016 18:26:58 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
-30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup7--- 
-30/05/2016 18:26:58 devpinoyLogger Enter textteaaaast@in.ibm.cominsc_lookup
-30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:58 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:26:58 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:26:58 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:26:58 devpinoyLogger Calling implicit wait
-30/05/2016 18:26:59 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_notregisteredid------sc_notregisteredid--- 
-30/05/2016 18:26:59 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
-30/05/2016 18:27:01 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
-30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup--- 
-30/05/2016 18:27:01 devpinoyLogger Enter textdushyams@in.ibm.cominsc_lookup
-30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:27:01 devpinoyLogger Calling implicit wait
-30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
-30/05/2016 18:27:01 devpinoyLogger Click onsc_looupbutton
-30/05/2016 18:27:01 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:27:01 devpinoyLogger Calling implicit wait
-30/05/2016 18:27:02 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
-30/05/2016 18:27:02 devpinoyLogger Click onsc_added
-30/05/2016 18:27:02 devpinoyLogger SC_profilemanagers----click-----------sc_adddone--------- 
-30/05/2016 18:27:02 devpinoyLogger Click onsc_adddone
-30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:27:08 devpinoyLogger Calling implicit wait
-30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----click-----------SC_removeadminaccess2--------- 
-30/05/2016 18:27:08 devpinoyLogger Click onSC_removeadminaccess2
-30/05/2016 18:27:08 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_removingaccesswindow------sc_removingaccesswindow--- 
-30/05/2016 18:27:08 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
-30/05/2016 18:27:10 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
-30/05/2016 18:27:10 devpinoyLogger SC_profilemanagers----click-----------SC_removebutton--------- 
-30/05/2016 18:27:10 devpinoyLogger Click onSC_removebutton
-30/05/2016 18:27:10 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_confirmsupplier------sc_confirmsupplier--- 
-30/05/2016 18:27:10 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
-30/05/2016 18:27:12 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
-30/05/2016 18:27:12 devpinoyLogger SC_profilemanagers----click-----------changeemail_overlay_done_xpath--------- 
-30/05/2016 18:27:12 devpinoyLogger Click onchangeemail_overlay_done_xpath
-30/05/2016 18:27:18 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
-30/05/2016 18:27:18 devpinoyLogger Calling implicit wait
-30/05/2016 18:27:18 devpinoyLogger SC_profilemanagers----click-----------sc_grandadminforemployee--------- 
-30/05/2016 18:27:18 devpinoyLogger Click onsc_grandadminforemployee
+30/05/2016 18:48:38 devpinoyLogger SC_profilemanagers----openBrowser-----------------Browser--- 
+30/05/2016 18:48:38 devpinoyLogger Opening BrowserMozilla
+30/05/2016 18:48:42 devpinoyLogger SC_profilemanagers----navigate-----------Environment--------- 
+30/05/2016 18:48:42 devpinoyLogger link value=Environment
+30/05/2016 18:48:42 devpinoyLogger Openined URL:https://supplierconn.mybluemix.net/SupplierConnection/login.action
+30/05/2016 18:48:58 devpinoyLogger SC_profilemanagers----verifyLogin-----------------Role--- 
+30/05/2016 18:48:58 devpinoyLogger Verifying login roleSupplieradmin3
+30/05/2016 18:49:55 devpinoyLogger Verified login roleSupplieradmin3
+30/05/2016 18:49:55 devpinoyLogger SC_profilemanagers----click-----------SC_companyname--------- 
+30/05/2016 18:49:55 devpinoyLogger Click onSC_companyname
+30/05/2016 18:49:59 devpinoyLogger SC_profilemanagers----clickbylinktext-----------sc_profilemanager--------- 
+30/05/2016 18:49:59 devpinoyLogger Click on element based on linktext sc_profilemanager
+30/05/2016 18:50:00 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_profilemanagertext------sc_profilemanagertext--- 
+30/05/2016 18:50:00 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
+30/05/2016 18:50:13 devpinoyLogger Checking for the text present  Profile Managersin object sc_profilemanagertext
+30/05/2016 18:50:13 devpinoyLogger SC_profilemanagers----click-----------sc_addadmin--------- 
+30/05/2016 18:50:13 devpinoyLogger Click onsc_addadmin
+30/05/2016 18:50:13 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:13 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:14 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------SC_supplieradminmax5mssag------SC_supplieradminmax5mssag--- 
+30/05/2016 18:50:14 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
+30/05/2016 18:50:27 devpinoyLogger Checking for the text present  Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. in object SC_supplieradminmax5mssag
+30/05/2016 18:50:27 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:27 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:27 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
+30/05/2016 18:50:27 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:50:29 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:50:29 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_invalidaddress--- 
+30/05/2016 18:50:29 devpinoyLogger Enter texttest.cominsc_lookup
+30/05/2016 18:50:29 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:29 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:30 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_giveemailaddrress------sc_giveemailaddrress--- 
+30/05/2016 18:50:30 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:50:32 devpinoyLogger Checking for the text present  Enter a valid email address.in object sc_giveemailaddrress
+30/05/2016 18:50:32 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup3--- 
+30/05/2016 18:50:32 devpinoyLogger Enter textraniranj@in.ibm.cominsc_lookup
+30/05/2016 18:50:32 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:32 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:32 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:32 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:32 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:32 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:34 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:34 devpinoyLogger Click onsc_added
+30/05/2016 18:50:34 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeradminalready------sc_buyeradminalready--- 
+30/05/2016 18:50:34 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
+30/05/2016 18:50:36 devpinoyLogger Checking for the text present  raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123in object sc_buyeradminalready
+30/05/2016 18:50:36 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup4--- 
+30/05/2016 18:50:36 devpinoyLogger Enter textbuyertocheckemail@gmail.cominsc_lookup
+30/05/2016 18:50:36 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:36 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:36 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:36 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:36 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:36 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:38 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:38 devpinoyLogger Click onsc_added
+30/05/2016 18:50:38 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_buyeralready------sc_buyeralready--- 
+30/05/2016 18:50:38 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
+30/05/2016 18:50:43 devpinoyLogger Checking for the text present  buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123in object sc_buyeralready
+30/05/2016 18:50:43 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup5--- 
+30/05/2016 18:50:43 devpinoyLogger Enter textgilesv@us.ibm.cominsc_lookup
+30/05/2016 18:50:43 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:43 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:43 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:43 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:43 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:43 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:44 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:44 devpinoyLogger Click onsc_added
+30/05/2016 18:50:44 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_sysadminalready------sc_sysadminalready--- 
+30/05/2016 18:50:44 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
+30/05/2016 18:50:46 devpinoyLogger Checking for the text present  gilesv@us.ibm.com is a System Adminin object sc_sysadminalready
+30/05/2016 18:50:46 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup6--- 
+30/05/2016 18:50:46 devpinoyLogger Enter textrag.h.unandann6@gmail.cominsc_lookup
+30/05/2016 18:50:46 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:46 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:46 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:46 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:46 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:46 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:47 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:47 devpinoyLogger Click onsc_added
+30/05/2016 18:50:47 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieradminalready------sc_supplieradminalready--- 
+30/05/2016 18:50:47 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
+30/05/2016 18:50:49 devpinoyLogger Checking for the text present  rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 checkin object sc_supplieradminalready
+30/05/2016 18:50:49 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup8--- 
+30/05/2016 18:50:49 devpinoyLogger Enter textvthendoo@in.ibm.cominsc_lookup
+30/05/2016 18:50:49 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:49 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:50 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:50 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:50 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:50 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:50 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:50 devpinoyLogger Click onsc_added
+30/05/2016 18:50:51 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_supplieremployeealready------sc_supplieremployeealready--- 
+30/05/2016 18:50:51 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
+30/05/2016 18:50:53 devpinoyLogger Checking for the text present  vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1in object sc_supplieremployeealready
+30/05/2016 18:50:53 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup7--- 
+30/05/2016 18:50:53 devpinoyLogger Enter textteaaaast@in.ibm.cominsc_lookup
+30/05/2016 18:50:53 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:53 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:53 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:53 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:53 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:53 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:54 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_notregisteredid------sc_notregisteredid--- 
+30/05/2016 18:50:54 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
+30/05/2016 18:50:56 devpinoyLogger Checking for the text present  No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection.in object sc_notregisteredid
+30/05/2016 18:50:56 devpinoyLogger SC_profilemanagers----input-----------sc_lookup------sc_lookup--- 
+30/05/2016 18:50:56 devpinoyLogger Enter textdushyams@in.ibm.cominsc_lookup
+30/05/2016 18:50:56 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:56 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:56 devpinoyLogger SC_profilemanagers----click-----------sc_looupbutton--------- 
+30/05/2016 18:50:56 devpinoyLogger Click onsc_looupbutton
+30/05/2016 18:50:56 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:50:56 devpinoyLogger Calling implicit wait
+30/05/2016 18:50:59 devpinoyLogger SC_profilemanagers----click-----------sc_added--------- 
+30/05/2016 18:50:59 devpinoyLogger Click onsc_added
+30/05/2016 18:50:59 devpinoyLogger SC_profilemanagers----click-----------sc_adddone--------- 
+30/05/2016 18:50:59 devpinoyLogger Click onsc_adddone
+30/05/2016 18:51:16 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:51:16 devpinoyLogger Calling implicit wait
+30/05/2016 18:51:16 devpinoyLogger SC_profilemanagers----click-----------SC_removeadminaccess2--------- 
+30/05/2016 18:51:16 devpinoyLogger Click onSC_removeadminaccess2
+30/05/2016 18:51:16 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_removingaccesswindow------sc_removingaccesswindow--- 
+30/05/2016 18:51:16 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
+30/05/2016 18:51:18 devpinoyLogger Checking for the text present  Removing Admin Access will still let this user be a company member, but without admin privileges.in object sc_removingaccesswindow
+30/05/2016 18:51:18 devpinoyLogger SC_profilemanagers----click-----------SC_removebutton--------- 
+30/05/2016 18:51:18 devpinoyLogger Click onSC_removebutton
+30/05/2016 18:51:18 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_confirmsupplier------sc_confirmsupplier--- 
+30/05/2016 18:51:18 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
+30/05/2016 18:51:20 devpinoyLogger Checking for the text present  ADDED AS SUPPLIERin object sc_confirmsupplier
+30/05/2016 18:51:20 devpinoyLogger SC_profilemanagers----click-----------changeemail_overlay_done_xpath--------- 
+30/05/2016 18:51:20 devpinoyLogger Click onchangeemail_overlay_done_xpath
+30/05/2016 18:51:28 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:51:28 devpinoyLogger Calling implicit wait
+30/05/2016 18:51:28 devpinoyLogger SC_profilemanagers----click-----------sc_grandadminforemployee--------- 
+30/05/2016 18:51:28 devpinoyLogger Click onsc_grandadminforemployee
+30/05/2016 18:51:28 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_titleDiv------sc_titleDiv--- 
+30/05/2016 18:51:28 devpinoyLogger Checking for the text present  Grant Supplier Admin Accessin object sc_titleDiv
+30/05/2016 18:51:30 devpinoyLogger Checking for the text present  Grant Supplier Admin Accessin object sc_titleDiv
+30/05/2016 18:51:30 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_removingaccesswindow------sc_removingaccesswindow1--- 
+30/05/2016 18:51:30 devpinoyLogger Checking for the text present  Your company has 5 available admin seats available.in object sc_removingaccesswindow
+30/05/2016 18:51:32 devpinoyLogger Checking for the text present  Your company has 5 available admin seats available.in object sc_removingaccesswindow
+30/05/2016 18:51:32 devpinoyLogger SC_profilemanagers----click-----------SC_removebutton--------- 
+30/05/2016 18:51:32 devpinoyLogger Click onSC_removebutton
+30/05/2016 18:51:32 devpinoyLogger SC_profilemanagers----Verifytextpresent-----------sc_confirmsupplier2------sc_confirmsupplier1--- 
+30/05/2016 18:51:32 devpinoyLogger Checking for the text present  ADDED AS SUPPLIER ADMINin object sc_confirmsupplier2
+30/05/2016 18:51:34 devpinoyLogger Checking for the text present  ADDED AS SUPPLIER ADMINin object sc_confirmsupplier2
+30/05/2016 18:51:34 devpinoyLogger SC_profilemanagers----click-----------changeemail_overlay_done_xpath--------- 
+30/05/2016 18:51:34 devpinoyLogger Click onchangeemail_overlay_done_xpath
+30/05/2016 18:51:45 devpinoyLogger SC_profilemanagers----waitfor-------------------- 
+30/05/2016 18:51:45 devpinoyLogger Calling implicit wait
+30/05/2016 18:51:45 devpinoyLogger SC_profilemanagers----click-----------SC_removeadmin--------- 
+30/05/2016 18:51:45 devpinoyLogger Click onSC_removeadmin
+30/05/2016 18:51:45 devpinoyLogger SC_profilemanagers----click-----------SC_removebutton--------- 
+30/05/2016 18:51:45 devpinoyLogger Click onSC_removebutton
