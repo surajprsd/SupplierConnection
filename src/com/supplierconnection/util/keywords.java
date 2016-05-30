@@ -230,8 +230,9 @@ public class keywords {
 				else if(keyword.equals("emailtheseSuppliers"))
 					result=emailtheseSuppliers(table.get(data));
 					
+				
 				else if (keyword.equals("SelectdropdownByvalue"))
-					result=selectdropdownByvalue(object,(table.get(data)));
+					result=SelectdropdownByvalue(object,(table.get(data)));
 				else if(keyword.equals("Supplierprofilelogoupload"))
 					result=Supplierprofilelogoupload();
 				else if(keyword.equals("Supplierbrochureupload"))
@@ -741,6 +742,12 @@ public String click_css(String csslink){
 			else if(userRole.equals("Supplieradmin2")){
 				driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("supplieradminid2"));
 				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("supplieradminpwd2"));
+				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
+			}
+			
+			else if(userRole.equals("Supplieradmin3")){
+				driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("supplieradminid3"));
+				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("supplieradminpwd3"));
 				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
 			}
 			
@@ -2564,21 +2571,27 @@ log("Uploading JPG file tupe ");
 
 //Select dropdown by value 
 
-public String selectdropdownByvalue(String xpathtext,String inputText)  {
-log("select text"+inputText+"in"+xpathtext);
-		try {
-			Select dropdown = new Select(driver.findElement(By.xpath(xpathtext)));
-			dropdown.selectByValue(inputText);
-			log("selected value "+inputText+"in"+xpathtext);
-					} 
-		catch (Exception e) { 
+ public String SelectdropdownByvalue(String xpathtext,String inputText){
+	 log("select text"+ inputText+"in"+ xpathtext);
+	        
+	 {
+	 	try {
+	 		Thread.sleep(3000);
+	 		//WebElement temp=driver.findElement(By.xpath(xpathtext));
+	 		System.out.println("The xpath-"+OR.getProperty(xpathtext)+" and text is -"+inputText);
+	 		Select dropdown = new Select(driver.findElement(By.xpath(OR.getProperty(xpathtext))));
+	 		dropdown.selectByValue(inputText);
+	 		
+	 	}
 
-                      return "Fail -unable to select -"+xpathtext;
-                      
+	 	catch (Exception e) {
+	 		return "Fail -unable to select -"+xpathtext;
+	 		}
+	 		
+	 	}
+	 return "Pass";
+	 }
 
-	}
-return "Pass";
-}
 
 public String Supplierprofilelogoupload()
    {

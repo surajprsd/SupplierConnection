@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="165417" started-at="2016-05-30T10:01:46Z" finished-at="2016-05-30T10:04:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="165417" started-at="2016-05-30T10:01:46Z" finished-at="2016-05-30T10:04:32Z">
+      <class name="com.supplierconnection.testcases.SC_RegisterpageValidations">
+        <test-method status="PASS" signature="register(java.util.Hashtable)[pri:0, instance:com.supplierconnection.testcases.SC_RegisterpageValidations@9112ad]" name="register" duration-ms="165383" started-at="2016-05-30T15:31:46Z" data-provider="getData" finished-at="2016-05-30T15:34:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectcategory=AFACS, confirmpassword=passw, email1=test@gmail.com, validation29=Your photo does not meet the Supplier Connection guidelines, please edit or try another., selectreason2=2, validation9=Please enter information for LinkedIn Profile , selectreason1=3, validation26=Please read and agree to the Terms and Conditions, validation8=Please enter information for ZIP Code , validation25=Please enter a valid twitter handle, validation7=Please enter information for Country , validation24=Please enter a valid LinkedIn Url, validation6=Please enter information for Password (Confirm) , validation5=Please enter information for Password , validation4=Please enter information for Email Address (Confirm) , validation53=Allowed to choose only 1 subcategory at a time, validation3=Please enter information for Email Address , validation2=Please enter information for Last Name , validation1=Please enter information for First Name , confirmemail=test123, email=Test, confirmemail2=test123@gmail.com, RunMode=Y, validation14=Required field cannot be left blank, validation13=Please enter information for What is your reason for registering with Supplier Connection? , validation12=Please read and agree to the Terms and Conditions , validation43=Please choose Procurement Responsibility , validation11=Please enter information for Tell us how you heard about Supplier Connection , validation42=Please enter information for Company Name , validation10=Please enter information for Twitter Handle , password=password, linkedin=awe, selectreason=Small Business: I am looking to SELL products/services, hearaboutSC=Another Company, validation34=Confirm Email Address is not matching with Email Address, validation33=Passwords do not match, validation32=Password does not contain a minimum of 8 characters and atleast 1 non-alphabetic character, validation31=Please enter a valid email address., validation30=Please enter a valid email address., Browser=Mozilla, twitter=!@}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- com.supplierconnection.testcases.SC_RegisterpageValidations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
