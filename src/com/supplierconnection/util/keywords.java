@@ -229,8 +229,9 @@ public class keywords {
 				else if(keyword.equals("emailtheseSuppliers"))
 					result=emailtheseSuppliers(table.get(data));
 					
+				
 				else if (keyword.equals("SelectdropdownByvalue"))
-					result=selectdropdownByvalue(object,(table.get(data)));
+					result=SelectdropdownByvalue(object,(table.get(data)));
 				else if(keyword.equals("Supplierprofilelogoupload"))
 					result=Supplierprofilelogoupload();
 				else if(keyword.equals("Supplierbrochureupload"))
@@ -2545,21 +2546,27 @@ log("Uploading JPG file tupe ");
 
 //Select dropdown by value 
 
-public String selectdropdownByvalue(String xpathtext,String inputText)  {
-log("select text"+inputText+"in"+xpathtext);
-		try {
-			Select dropdown = new Select(driver.findElement(By.xpath(xpathtext)));
-			dropdown.selectByValue(inputText);
-			log("selected value "+inputText+"in"+xpathtext);
-					} 
-		catch (Exception e) { 
+ public String SelectdropdownByvalue(String xpathtext,String inputText){
+	 log("select text"+ inputText+"in"+ xpathtext);
+	        
+	 {
+	 	try {
+	 		Thread.sleep(3000);
+	 		//WebElement temp=driver.findElement(By.xpath(xpathtext));
+	 		System.out.println("The xpath-"+OR.getProperty(xpathtext)+" and text is -"+inputText);
+	 		Select dropdown = new Select(driver.findElement(By.xpath(OR.getProperty(xpathtext))));
+	 		dropdown.selectByValue(inputText);
+	 		
+	 	}
 
-                      return "Fail -unable to select -"+xpathtext;
-                      
+	 	catch (Exception e) {
+	 		return "Fail -unable to select -"+xpathtext;
+	 		}
+	 		
+	 	}
+	 return "Pass";
+	 }
 
-	}
-return "Pass";
-}
 
 public String Supplierprofilelogoupload()
    {
