@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="175884" started-at="2016-05-30T08:42:38Z" finished-at="2016-05-30T08:45:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="175884" started-at="2016-05-30T08:42:38Z" finished-at="2016-05-30T08:45:33Z">
+      <class name="com.supplierconnection.testcases.SC_profilemanagers">
+        <test-method status="FAIL" signature="SC_profilemanagers(java.util.Hashtable)[pri:0, instance:com.supplierconnection.testcases.SC_profilemanagers@15da136]" name="SC_profilemanagers" duration-ms="175836" started-at="2016-05-30T14:12:38Z" data-provider="getDataForSteps" finished-at="2016-05-30T14:15:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Browser=Mozilla, sc_titleDiv=Grant Supplier Admin Access, sc_giveemailaddrress=Enter a valid email address., sc_sysadminalready=gilesv@us.ibm.com is a System Admin, Role=Supplieradmin3, sc_moresupplieradminaddition=Your company is currently using all 6 available Supplier Admin seats., sc_addsupplieroverlatext=Add a Supplier Employee, sc_profilemanagertext=Profile Managers, sc_buyeralready=buyertocheckemail@gmail.com is a Buyer for Buyer Company Selenium Test123, sc_lookup16=8june2015buyer@gmail.com, sc_lookup15=shiv.ark.28@gmail.com, sc_removingaccesswindow1=Your company has 5 available admin seats available., sc_lookup14=sup.plier.conne.ction.14@gmail.com, sc_supplieremployeealready=vthendoo@in.ibm.com is a Supplier Employee for Vinod's profile Legal name 1, sc_lookup13=200715182605test@gmail.com, sc_lookup12=140714165915test@gmail.com, sc_lookup11=1.2.3.4.5.6.78910superbowl@gmail.com, sc_supplieradminalready=rag.h.unandann6@gmail.com is a Supplier Admin for sStep1 check, RunMode=Y, sc_invalidaddress=test.com, sc_buyeradminalready=raniranj@in.ibm.com is a Buyer Admin for Buyer Company Selenium Test123, sc_lookup8=vthendoo@in.ibm.com, sc_removingaccesswindow=Removing Admin Access will still let this user be a company member, but without admin privileges., sc_notregisteredid=No match. We did not find a registered user with the email account you entered. Please check with the user to ensure he/she has registered with Supplier Connection., sc_lookup7=teaaaast@in.ibm.com, sc_confirmsupplier1=ADDED AS SUPPLIER ADMIN, sc_lookup6=rag.h.unandann6@gmail.com, sc_lookup5=gilesv@us.ibm.com, sc_lookup4=buyertocheckemail@gmail.com, sc_lookup3=raniranj@in.ibm.com, sc_lookup2=rft2.9buyer@gmail.com, SC_supplieradminmax5mssag=Your company has 5 available admin seats. To add a Supplier Admin to the system, the user must first complete registration at Supplier Connection. , sc_lookup=dushyams@in.ibm.com, sc_confirmsupplier=ADDED AS SUPPLIER}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[result]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: result
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.supplierconnection.util.keywords.executeKeywords(keywords.java:298)
+	at com.supplierconnection.testcases.SC_profilemanagers.SC_profilemanagers(SC_profilemanagers.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SC_profilemanagers -->
+      </class> <!-- com.supplierconnection.testcases.SC_profilemanagers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
