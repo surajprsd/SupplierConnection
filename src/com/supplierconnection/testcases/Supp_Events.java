@@ -24,9 +24,7 @@ public class Supp_Events {
 		if(data.get("RunMode").equals("N"))
 			throw new SkipException("Flag set to no");
 		
-		k.executeKeywords("Supp_Events", xls, data);
-		
-		
+		k.executeKeywords("Supp_Events", xls, data);	
 		
 	}
 
