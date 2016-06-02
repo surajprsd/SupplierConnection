@@ -43,6 +43,7 @@ import org.testng.Assert;
 
 import autoitx4java.AutoItX;
 
+import com.google.common.io.Files;
 import com.jacob.com.LibraryLoader;
 
 public class keywords {
@@ -262,6 +263,8 @@ public class keywords {
 					result=Verifycontentpresent(object,(table.get(data)));
 				else if (keyword.equals("step1initprocess"))
 					result=step1initprocess();
+				else if(keyword.equals("Verifybookmark"))
+					result=Verifybookmark(table.get(data));
 				
 				 
 					
@@ -1399,7 +1402,7 @@ public String facetSelection(){
 	return "Pass";	
 		
 }
-public String endecaRuntime(String maxdaysdiff){
+public String endecaRuntime(String maxdaysdiff) {
 				try{
 					log("Executing endecaRuntime");
 					//String Resultsperpage  = driver.findElement(By.xpath("//*[@id='ContentArea']/div[1]/div[3]")).getText();
@@ -1444,7 +1447,6 @@ public String endecaRuntime(String maxdaysdiff){
 				log("Unable to check endecaRuntime" + e);
 				return "Fail - Unable to check endecaRuntime  ";
 			}
-			
 			
 	}
 
@@ -1557,23 +1559,25 @@ public String pdfReading(String ProfileName){
 	
 	driver.findElement(By.xpath("//img[@title='Print']")).click();
 	//Process process = new ProcessBuilder("C:\\Users\\IBM_ADMIN\\Desktop\\smallbizprofiledownlaod.exe").start();
-	Thread.sleep(2000);
 	AutoItX x = new AutoItX();
+	Thread.sleep(3000);
+	
 	x.winActivate("[CLASS:MozillaDialogClass]");
 	String temp=x.winGetTitle("[CLASS:MozillaDialogClass]");
-	x.sleep(400);
+	x.sleep(700);
 	x.controlSend("[CLASS:MozillaDialogClass]", "", "", "{TAB}");
-	x.sleep(400);
+	x.sleep(700);
 	x.controlSend("[CLASS:MozillaDialogClass]", "", "", "{TAB}");
-	x.sleep(400);
+	x.sleep(700);
 	x.controlSend("[CLASS:MozillaDialogClass]", "", "", "{TAB}");
-	x.sleep(400);
-	x.controlSend("[CLASS:MozillaDialogClass]", "", "", "{ENTER}");
+	x.sleep(700);
+	x.controlSend("[CLASS:MozillaDialogClass]", "", "", "{Enter}");
 	
 String a[] = temp.split(" ",2);
 System.out.println(a[0]);
 System.out.println(a[1]);
 Thread.sleep(2000);
+
 driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
 driver.get(OR.getProperty("pdfDownloadpath")+a[1]);
 URL url = new URL(driver.getCurrentUrl());
@@ -1593,6 +1597,17 @@ for(int i=0;i<max;i++)
 parser.getPDDocument().close();
 driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"w");
 driver.findElement(By.xpath("//a[@class='removalLink']")).click();
+
+//File (or Directory) to be moved
+File file1 = new File(OR.getProperty("pdfsrcpath")+a[1]);
+
+// Destination directory
+File dir = new File(System.getProperty("user.dir")+OR.getProperty("pdfdestpath"));
+
+// Move file to a new directory
+ file1.renameTo(new File(dir, file1.getName()));
+
+
 	}catch(Exception e)
 	{
 		log("Exception caught while reading pdf"+ e);
@@ -1656,6 +1671,16 @@ parser.getPDDocument().close();
 //closing the pdf tab
 driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"w");
 driver.findElement(By.xpath("//a[@class='removalLink']")).click();
+//File (or Directory) to be moved
+File file1 = new File(OR.getProperty("pdfsrcpath")+a[1]);
+
+//Destination directory
+File dir = new File(System.getProperty("user.dir")+OR.getProperty("pdfdestpath"));
+
+//Move file to a new directory
+file1.renameTo(new File(dir, file1.getName()));
+
+
 
 
 	}catch(Exception e)
@@ -3007,8 +3032,7 @@ public String step1initprocess()
 		driver.findElement(By.xpath(OR.getProperty("step1_init1"))).click();
 		driver.findElement(By.xpath(OR.getProperty("step1_init2"))).click();
         driver.findElement(By.xpath(OR.getProperty("step1_init3"))).click();
-        //driver.findElement(By.xpath(OR.getProperty("step1_init4"))).click();
-        //driver.findElement(By.xpath(OR.getProperty("step1_init5"))).click();
+        
         log("Uncheked options on step1 ");
 		return "Pass";
 		
@@ -3016,6 +3040,119 @@ public String step1initprocess()
 		return "Fail -unable to uncheck in step1-";
 	}
 }
+
+public String Verifybookmark(String profileName){
+	
+// Check bookmarked supplier active /inactive  in saved supplier of supplier and buyer
+	try{
+		log("Executing Verifyboomkark");
+		String currentpagenum = driver.findElement(By.xpath("//input[@id='pageNumber']")).getAttribute("value").trim();
+		 
+		 String result1= null;
+		
+		 String lastpagenum= driver.findElement(By.cssSelector("span[class='recordMetaDiv']")).getText();
+		 
+		 
+		int currentpage =Integer.parseInt(currentpagenum.trim());
+		// int currentpage=org.apache.commons.lang3.math.NumberUtils.toInt(currentpagenum, 0);
+		 System.out.println("Currenpage"+ currentpagenum);
+		 
+		 int maxpage= Integer.valueOf(lastpagenum.trim());
+		 System.out.println("Maxpage"+ maxpage);
+		 
+		 result1= SearchProfilePerPage_textview(profileName,currentpage);
+		 System.out.println("Result"+ result1);
+		 for(int i=0;i<maxpage;i++){
+			if((result1.equals("Fail"))){
+				  currentpagenum=  driver.findElement(By.xpath("//input[@id='pageNumber']")).getText();
+				System.out.println("Currenpage"+ currentpagenum);
+				
+				 
+				 System.out.println("Profile not bookmarked in this page");
+		 	
+			
+				 if(isElementpresent("//div[@class='pageNext active col']/a")){
+					
+					 
+					driver.findElement(By.xpath("//div[@class='pageNext active col']/a")).click();
+					Thread.sleep(2000);
+					result1= SearchProfilePerPage_textview(profileName,currentpage);
+				 }
+			
+			}
+		 
+		 }
+	}catch(Exception e){
+		log("Unable to do Bookmark_offline" + e);
+		return "Fail-Unable to do Bookmark_offline";
+	}
+	return "Pass";
+	
+}
+
+
+
+public String SearchProfilePerPage_textview(String profileName, int currentpage){
+	 String result = null;
+		try{
+			System.out.println("Executing displayResultsPerPage");
+		//Getting the suppleir records per page
+			List<WebElement> results = driver.findElements(By.xpath("//div[@class='sup-container']"));
+			
+	    int max= results.size();
+	    System.out.println("Max in search method:"+ max);
+	    String currentpagenum= driver.findElement(By.xpath("//input[@id='pageNumber']")).getAttribute("value").trim();
+	    currentpage =Integer.parseInt(currentpagenum.trim());
+		System.out.println("Currenpage in method"+ currentpage);
+		
+		for(int i=1;i<=max;i++){
+		
+		String xpa1="//div[@id='v_results']/div[";
+		String xpa2="]/div[1]/div[1]/div/h2/span";
+		//Printing all supplier profile names per page
+			WebElement main =driver.findElement(By.xpath("//div[@id='v_results']/div"));  
+			String temp = null;
+			//if(main.findElement(By.xpath(xpa1+i+xpa2)).isDisplayed()){
+			if(isElementpresent(xpa1+i+xpa2)){
+				temp = main.findElement(By.xpath(xpa1+i+xpa2)).getText();
+					System.out.println(temp);
+					System.out.println("Supplier name: " + temp);
+					if(profileName.trim().equals(temp.trim())){
+						System.out.println("Bookmarked profile is present in text view mode");
+						if(isElementpresent("//img[@title='Remove bookmark']")){
+							System.out.println("Bookmared in My saved suppliers");
+								if(isElementpresent("//span[@class='suppLink col W500px']")){
+									String offlineMsg = driver.findElement(By.xpath("//span[@class='suppLink col W500px']")).getText().trim();
+									System.out.println(offlineMsg);
+								}
+							result="Pass";
+						}
+						/*else{
+							System.out.println("Not Bookmared My saved suppliers");
+							result="Fail";
+						}*/
+					}
+					else{
+						//System.out.println("Bookmarked profile is not present in text view mode");
+						result="Fail";
+						
+						
+					}
+					
+			}
+			/*else{
+				System.out.println("Element not present as not in textview "+ main.findElement(By.xpath(xpa1+i+xpa2)));
+			}*/
+		}
+		}catch(Exception e){
+			System.out.println("Unable to check displayResultsPerPage" + e);
+			//return " Fail- Unable to check displayResultsPerPage";
+		}
+		System.out.println("returning result"+ result);
+		return result;
+		
+	}
+
 
 }
 
