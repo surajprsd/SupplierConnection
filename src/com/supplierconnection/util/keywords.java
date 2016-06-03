@@ -265,7 +265,8 @@ public class keywords {
 					result=step1initprocess();
 				else if(keyword.equals("Verifybookmark"))
 					result=Verifybookmark(table.get(data));
-				
+				else if(keyword.equals("downloadfile"))
+					result=downloadfile();
 				 
 					
 				//assertions to show result as fail 
@@ -3152,6 +3153,33 @@ public String SearchProfilePerPage_textview(String profileName, int currentpage)
 		return result;
 		
 	}
+	
+	public String downloadfile()
+	{
+          log("Downloading file  ");
+
+
+	try
+	{
+		Robot robot = new Robot();
+
+		// A short pause, just to be sure that OK is selected
+		Thread.sleep(3000);
+		
+		robot.keyPress(java.awt.event.KeyEvent.VK_DOWN);
+
+		robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		log("File download completes");
+			
+		
+	}
+	catch(Exception e)
+	{
+	 return "Fail to upload";
+	}
+	return "Pass";
+        }
 
 
 }
