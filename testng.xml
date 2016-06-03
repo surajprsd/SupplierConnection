@@ -27,9 +27,15 @@
     </classes>
 </test>
 
-<test name="SC_step4">
+<test name="Annual_Hard_interrupt">
 <classes>
-        <class name="com.supplierconnection.testcases.SC_step4"></class>  
+        <class name="com.supplierconnection.testcases.Annual_Hard_interrupt"></class>  
+    </classes>
+</test>
+
+<test name="Annual_Soft_interrupt">
+<classes>
+        <class name="com.supplierconnection.testcases.Annual_Soft_interrupt"></class>  
     </classes>
 </test>
 
