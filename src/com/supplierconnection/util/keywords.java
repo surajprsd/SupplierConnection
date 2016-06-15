@@ -268,8 +268,6 @@ public class keywords {
 					result=step1initprocess();
 				else if(keyword.equals("verifybookmark_profile"))
 					result=verifybookmark_profile(table.get(data));
-				else if(keyword.equals("verifyUnbookmark_profile"))
-					result=verifyUnbookmark_profile(table.get(data));
 				else if(keyword.equals("gotofindasupplierByrole"))
 					result=gotofindasupplierByrole(table.get(data));
 				else if(keyword.equals("dashboard_bookmarkcheck"))
@@ -3176,62 +3174,6 @@ public String verifybookmark_profile(String profileName){
 	
 }
 
-public String verifyUnbookmark_profile(String profileName){
-	
-	log("Executing Verifyboomkark");
-// Check bookmarked supplier active /inactive  in saved supplier of supplier and buyer
-	try{
-		
-		//String statusofprofile= bookmarkstatus(profileName);
-		
-		//if(statusofprofile.equals("Active and VISIBLE")){
-			String currentpagenum = driver.findElement(By.xpath("//input[@id='pageNumber']")).getAttribute("value").trim();
-		 
-			String result1= null;
-		
-			String lastpagenum= driver.findElement(By.cssSelector("span[class='recordMetaDiv']")).getText();
-		 
-		 
-		int currentpage =Integer.parseInt(currentpagenum.trim());
-		// int currentpage=org.apache.commons.lang3.math.NumberUtils.toInt(currentpagenum, 0);
-		 System.out.println("Currenpage"+ currentpagenum);
-		 
-		 int maxpage= Integer.valueOf(lastpagenum.trim());
-		 System.out.println("Maxpage"+ maxpage);
-		 
-		 result1= SearchProfilePerPage_textview(profileName,currentpage);
-		 System.out.println("Result"+ result1);
-		 for(int i=0;i<maxpage;i++){
-			if((result1.equals("Fail"))){
-				  currentpagenum=  driver.findElement(By.xpath("//input[@id='pageNumber']")).getText();
-				System.out.println("Currenpage"+ currentpagenum);
-				
-				 
-				 System.out.println("Profile not bookmarked in this page");
-		 	
-			
-				 if(isElementpresent("//div[@class='pageNext active col']/a")){
-					
-					 
-					driver.findElement(By.xpath("//div[@class='pageNext active col']/a")).click();
-					Thread.sleep(2000);
-					result1= SearchProfilePerPage_textview(profileName,currentpage);
-				 }
-			
-			}
-		 
-		 }
-		//}//end of if
-		/*else{
-			bookmarkstatus(profileName);
-		}*/
-	}catch(Exception e){
-		log("Unable to do Bookmark_offline" + e);
-		return "Fail-Unable to do Bookmark_offline";
-	}
-	return "Pass";
-	
-}
 
 
 public String SearchProfilePerPage_textview(String profileName, int currentpage){
