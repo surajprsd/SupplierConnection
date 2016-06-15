@@ -1,5 +1,6 @@
 package com.supplierconnection.util;
 
+import java.awt.Robot;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -283,6 +284,8 @@ public class keywords {
 					result=NAICS_count_DBcheck(table.get(data));
 				else if(keyword.equals("compare_NAICSresults"))
 					result=compare_NAICSresults(DBSuppliers,suppliernames,table.get(data));
+				else if(keyword.equals("downloadfile"))						
+					result=downloadfile();
 				
 				 
 					
@@ -760,6 +763,13 @@ public String click_css(String csslink){
 			else if(userRole.equals("Supplieradmin2")){
 				driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("supplieradminid2"));
 				driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("supplieradminpwd2"));
+				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();			
+				}		
+						
+				else if(userRole.equals("Supplieradmin3")){		
+					driver.findElement(By.xpath(OR.getProperty("username_xpath"))).sendKeys(OR.getProperty("supplieradminid3"));		
+					driver.findElement(By.xpath(OR.getProperty("password_xpath"))).sendKeys(OR.getProperty("supplieradminpwd3"));
+
 				driver.findElement(By.xpath(OR.getProperty("login_submit_xpath"))).click();	
 			}
 			
@@ -3681,9 +3691,38 @@ public String compare_NAICSresults(ArrayList<String> DBSuppliers, ArrayList<Stri
 	return "Pass";
 }
 
+public String downloadfile()
+	{
+          log("Downloading file  ");
 
 
+	try
+	{
+		Robot robot = new Robot();
+
+		// A short pause, just to be sure that OK is selected
+		Thread.sleep(3000);
+		
+		robot.keyPress(java.awt.event.KeyEvent.VK_DOWN);
+
+		robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		log("File download completes");
+			
+		
+	}
+	catch(Exception e)
+	{
+	 return "Fail to upload";
+	}
+	return "Pass";
+        }
 
 
 }
+
+
+
+
+
 
